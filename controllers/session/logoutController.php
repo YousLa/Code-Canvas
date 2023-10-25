@@ -1,15 +1,15 @@
 <!-- BOUTON SE DECONNECTER -->
 <?php
-/*
+
 
 session_start();
 
-unset($_SESSION['pseudo']);
-unset($_SESSION['id']);
+// unset($_SESSION['pseudo']);
+// unset($_SESSION['id']);
 
 session_destroy();
 
-header('Location: ?page=home');
+header('Location: /index.php');
 
 ?>
 
