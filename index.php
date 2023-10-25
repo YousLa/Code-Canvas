@@ -13,9 +13,9 @@ require_once 'views/templates/nav.php';
 <div class="style1">
 
     <h1>HTML</h1>
-    
+
     <img src="" alt="">
-    
+
     <p>HTML</p>
     <p>CSS</p>
     <p>JAVASCRIPT</p>
@@ -25,7 +25,7 @@ require_once 'views/templates/nav.php';
         <button>
             HTML
         </button>
-        
+
         <button>
             CSS
         </button>
@@ -34,16 +34,16 @@ require_once 'views/templates/nav.php';
             <button>style1</button>
             <button>style2</button>
         </div>
-        
+
         <button>
             JAVASCRIPT
         </button>
-          <!-- Choix Function -->
-          <div class="hidden-js">
+        <!-- Choix Function -->
+        <div class="hidden-js">
             <button>function1</button>
             <button>function2</button>
         </div>
-        
+
         <button>
             PHP
         </button>
@@ -52,15 +52,15 @@ require_once 'views/templates/nav.php';
     <div class="hidden-form">
 
         <h1>Registration Form</h1>
-        
-        <form action="./index.php?page=signup" method="POST">
-            
+
+        <form action="./controllers/session/signupController.php" method="POST">
+
             <label for="pseudo">Pseudo</label>
             <input type="text" name="pseudo" id="pseudo">
-            
+
             <label for="password">Password</label>
             <input type="password" name="password" id="password">
-            
+
             <button type="submit" name="register">Register</button>
         </form>
 
@@ -68,11 +68,10 @@ require_once 'views/templates/nav.php';
 </div>
 
 <!-- A rajouter -->
-    <!-- Login coté view -->
-    <!-- Sign up coté view -->
+<!-- Login coté view -->
+<!-- Sign up coté view -->
 
 <?php
 // require_once 'controllers/router.php';
 
 require_once 'views/templates/footer.php';
-
