@@ -91,10 +91,16 @@ button.language-button:active {
 
 /* Bouton HTML */
 
-.htmlButton {
-
+button.htmlButton {
     /* Background des boutons de base */
-    background: rgb(234, 127, 225);
+    background: #c677af;
     /* border */
-    border: 2px solid rgb(234, 111, 223);
+    border: 2px solid #c660a9;
+}
+
+button.cssButton {
+    /* Background des boutons de base */
+    background: #1d8e48;
+    /* border */
+    border: 2px solid #156a35;
 }

@@ -9,4 +9,8 @@
     display: flex;
 } */
 
+.image {
+   width: 2rem;
+}
+
 .style1 .titre {}

@@ -14,7 +14,7 @@ require_once 'views/templates/nav.php';
 
     <h1 class="titre">HTML</h1>
 
-    <img class="image" src="assets/img/" alt="">
+    <img class="image" src="./assets/img/spiral_html.svg" alt="">
 
     <p src="htmlText">HTML</p>
     <p src="cssText">CSS</p>
