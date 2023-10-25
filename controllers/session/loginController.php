@@ -15,7 +15,7 @@ if (isset($_POST['login'], $_POST['password'])) {
         // Connexion à la base de données
         include_once "../../models/db.php";
 
-        $database = getConnection();
+      
 
         // Création de la requête
         $query = "SELECT * FROM user WHERE pseudo = :pseudo AND password = sha2(:password, 256)";
