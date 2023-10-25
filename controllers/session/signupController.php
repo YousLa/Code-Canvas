@@ -12,7 +12,7 @@ if (isset($_POST['register'], $_POST['pseudo'], $_POST['password']) && !empty($_
     // ! Chemin a partir du fucking fichier "index.php"
     include_once "../../models/db.php";
 
-    $database = getConnection();
+
 
     $query = "
     INSERT INTO user
