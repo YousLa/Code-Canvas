@@ -16,37 +16,35 @@
  * Permet de récupérer l'instance de la connexion à la base de données
  * @return PDO Instance de PDO
  */
-function getConnection(): PDO
-{
-    // DSN = Data Source Name
-    $server = "mysql";
-    $host = "localhost";
-    $dbname = "codecanvas";
-    $charset = "utf8";
 
-    // Pour accéder à un serveur MySQL avec commme hôte le localhost d'une base de donnée du nom kimiaproject de charset utf8 dont l'username est root et le mot de passe null.
-    $dsn = "$server:host=$host;dbname=$dbname;charset=$charset";
-    $username = "root";
-    $pwd = "";
+// DSN = Data Source Name
+$server = "mysql";
+$host = "localhost";
+$dbname = "codecanvas";
+$charset = "utf8";
 
-    // * Si la tentative de connexion à la base de données réussi alors
-    try {
-        // L'accès à la base de données se fait en instanciant un objet de la classe PDO (new PDO)
-        $database = new PDO($dsn, $username, $pwd);
+// Pour accéder à un serveur MySQL avec commme hôte le localhost d'une base de donnée du nom kimiaproject de charset utf8 dont l'username est root et le mot de passe null.
+$dsn = "$server:host=$host;dbname=$dbname;charset=$charset";
+$username = "root";
+$pwd = "";
 
-        // Attribution du mode d'exception par défaut.
-        // PDO::ATTR_ERRMODE : Le mode pour reporter les erreurs de PDO. qui prendra la forme d'une PDO::ERRMODE_EXCEPTION
-        // PDO::ERRMODE_EXCEPTION : Représente une erreur émise par PDO.
-        $database->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+// * Si la tentative de connexion à la base de données réussi alors
+try {
+    // L'accès à la base de données se fait en instanciant un objet de la classe PDO (new PDO)
+    $database = new PDO($dsn, $username, $pwd);
 
-        // On retourne la variable $database si la tentative de connexion est un succès
-        return $database;
+    // Attribution du mode d'exception par défaut.
+    // PDO::ATTR_ERRMODE : Le mode pour reporter les erreurs de PDO. qui prendra la forme d'une PDO::ERRMODE_EXCEPTION
+    // PDO::ERRMODE_EXCEPTION : Représente une erreur émise par PDO.
+    $database->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
-        // * Sinon PDO lancera une exception PDOException et y définit les propriétés afin de représenter le code d'erreur et les informations complémentaires.
+    // On retourne la variable $database si la tentative de connexion est un succès
+    return $database;
 
-        // $e contient le PDOException.
-    } catch (PDOException $e) {
-        // on utilise la fonction getMessage() pour retourner le message de l'exception, sous la forme d'une chaîne de caractères.
-        die("Erreur lors de la tentative de connexion avec la base de données : " . $e->getMessage());
-    }
+    // * Sinon PDO lancera une exception PDOException et y définit les propriétés afin de représenter le code d'erreur et les informations complémentaires.
+
+    // $e contient le PDOException.
+} catch (PDOException $e) {
+    // on utilise la fonction getMessage() pour retourner le message de l'exception, sous la forme d'une chaîne de caractères.
+    die("Erreur lors de la tentative de connexion avec la base de données : " . $e->getMessage());
 }
