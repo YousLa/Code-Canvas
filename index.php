@@ -5,37 +5,37 @@ session_start();
 require_once 'views/templates/header.php';
 
 require_once 'views/templates/nav.php';
-var_dump($_SESSION['id']);
+
 ?>
 
 <!-- HTML -->
 
 <div class="style1">
 
-    <h1>HTML</h1>
+    <h1 class="titre">HTML</h1>
 
-    <img src="" alt="">
+    <img class="image" src="" alt="">
 
-    <p>HTML</p>
-    <p>CSS</p>
-    <p>JAVASCRIPT</p>
-    <p>PHP</p>
+    <p src="htmlText">HTML</p>
+    <p src="cssText">CSS</p>
+    <p src="jsText">JAVASCRIPT</p>
+    <p src="phpText">PHP</p>
 
-    <div>
-        <button>
+    <div class="menuFooter">
+        <button class="htmlButton">
             HTML
         </button>
 
-        <button>
+        <button class="cssButton">
             CSS
         </button>
         <!-- Choix Style -->
-        <div class="hidden-css">
+        <div class="choice_css hidden-css">
             <button>style1</button>
             <button>style2</button>
         </div>
 
-        <button>
+        <button class="jsButton">
             JAVASCRIPT
         </button>
         <!-- Choix Function -->
@@ -44,13 +44,13 @@ var_dump($_SESSION['id']);
             <button>function2</button>
         </div>
 
-        <button>
+        <button class="phpButton">
             PHP
         </button>
     </div>
 
     <!-- Formulaire d'inscription -->
-    <div class="hidden-registration">
+    <div class="registre hidden-registration">
 
         <h1>Registration Form</h1>
 
@@ -67,7 +67,7 @@ var_dump($_SESSION['id']);
 
     </div>
 
-    <div class="hidden-login">
+    <div class="login hidden-login">
         <h1>LOG IN</h1>
 
         <form action="./controllers/session/loginController.php" method="POST">
