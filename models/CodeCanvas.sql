@@ -7,6 +7,8 @@
 -- Version du serveur : 10.4.28-MariaDB
 -- Version de PHP : 8.2.4
 
+DROP TABLE `user`;
+
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
 SET time_zone = "+00:00";
@@ -31,7 +33,7 @@ DROP TABLE IF EXISTS `user`;
 CREATE TABLE `user` (
   `id` int(11) NOT NULL,
   `pseudo` varchar(50) NOT NULL,
-  `password` varchar(50) NOT NULL,
+  `password` varchar(256) NOT NULL,
   `style` varchar(20) NULL,
   `fonctionjs` varchar(20) NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;

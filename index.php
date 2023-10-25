@@ -5,7 +5,7 @@ session_start();
 require_once 'views/templates/header.php';
 
 require_once 'views/templates/nav.php';
-
+var_dump($_SESSION['id']);
 ?>
 
 <!-- HTML -->
@@ -49,7 +49,8 @@ require_once 'views/templates/nav.php';
         </button>
     </div>
 
-    <div class="hidden-form">
+    <!-- Formulaire d'inscription -->
+    <div class="hidden-registration">
 
         <h1>Registration Form</h1>
 
@@ -64,6 +65,21 @@ require_once 'views/templates/nav.php';
             <button type="submit" name="register">Register</button>
         </form>
 
+    </div>
+
+    <div class="hidden-login">
+        <h1>LOG IN</h1>
+
+        <form action="./controllers/session/loginController.php" method="POST">
+
+            <label for="pseudo">Pseudo</label>
+            <input type="text" name="pseudo" id="pseudo">
+
+            <label for="password">Password</label>
+            <input type="password" name="password" id="password">
+
+            <button type="submit" name="login">Se connecter</button>
+        </form>
     </div>
 </div>
 
