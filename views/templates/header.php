@@ -12,4 +12,6 @@
 
 </head>
 
-<body>
+<!-- Style 1  -->
+
+<body class="style1">
