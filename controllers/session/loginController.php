@@ -4,7 +4,7 @@
 
 
 //var_dump($_POST);
-
+/*
 if (isset($_POST['login'])) {
 
     if (empty($_POST['pseudo']) || empty($_POST['password'])) {
@@ -34,11 +34,8 @@ if (isset($_POST['login'])) {
 
             // Ajouter des variables session 
 
+            $_SESSION['id'] = $arrayResult[0]['id'];
             $_SESSION['pseudo'] = $arrayResult[0]['pseudo'];
-            $_SESSION['email'] = $arrayResult[0]['email'];
-            $_SESSION['birthdate'] = $arrayResult[0]['birthdate'];
-            $_SESSION['created_at'] = $arrayResult[0]['created_at'];
-            $_SESSION['updated_at'] = $arrayResult[0]['updated_at'];
             header('Location: ?page=fiche');
         } else {
             $message = "<span>Wrong Data</span>";

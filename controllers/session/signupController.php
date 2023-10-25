@@ -1,6 +1,6 @@
 <!-- SIGN UP - INSCRIPTION -->
 <?php
-
+/*
 # Lancement de la session
 session_start();
 
