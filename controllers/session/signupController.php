@@ -1,15 +1,13 @@
 <!-- SIGN UP - INSCRIPTION -->
 <?php
-/*
+
 # Lancement de la session
 session_start();
 
-if (isset($_POST['register'], $_POST['pseudo'], $_POST['email'], $_POST['birthdate'], $_POST['password']) && !empty($_POST['pseudo']) && !empty($_POST['email']) && !empty($_POST['birthdate']) && !empty($_POST['password'])) {
+if (isset($_POST['register'], $_POST['pseudo'], $_POST['password']) && !empty($_POST['pseudo']) && !empty($_POST['password'])) {
 
-    $pseudo = trim($_POST['pseudo']);
-    $email = trim($_POST['email']);
-    $password = $_POST['password'];
-    $birthdate = trim($_POST['birthdate']);
+    $pseudo = htmlspecialchars(trim($_POST['pseudo']));
+    $password = htmlspecialchars(trim($_POST['password']));
 
     // ! Chemin a partir du fucking fichier "index.php"
     include_once "./template/connectDB.php";

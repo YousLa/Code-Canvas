@@ -21,7 +21,7 @@ function getConnection(): PDO
     // DSN = Data Source Name
     $server = "mysql";
     $host = "localhost";
-    $dbname = "kimiaproject";
+    $dbname = "codecanvas";
     $charset = "utf8";
 
     // Pour accéder à un serveur MySQL avec commme hôte le localhost d'une base de donnée du nom kimiaproject de charset utf8 dont l'username est root et le mot de passe null.

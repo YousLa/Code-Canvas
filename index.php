@@ -30,7 +30,7 @@ require_once 'views/templates/nav.php';
             CSS
         </button>
         <!-- Choix Style -->
-        <div>
+        <div class="hidden-css">
             <button>style1</button>
             <button>style2</button>
         </div>
@@ -39,7 +39,7 @@ require_once 'views/templates/nav.php';
             JAVASCRIPT
         </button>
           <!-- Choix Function -->
-          <div>
+          <div class="hidden-js">
             <button>function1</button>
             <button>function2</button>
         </div>
@@ -47,6 +47,23 @@ require_once 'views/templates/nav.php';
         <button>
             PHP
         </button>
+    </div>
+
+    <div class="hidden-form">
+
+        <h1>Registration Form</h1>
+        
+        <form action="./index.php?page=signup" method="POST">
+            
+            <label for="pseudo">Pseudo</label>
+            <input type="text" name="pseudo" id="pseudo">
+            
+            <label for="password">Password</label>
+            <input type="password" name="password" id="password">
+            
+            <button type="submit" name="register">Register</button>
+        </form>
+
     </div>
 </div>
 
