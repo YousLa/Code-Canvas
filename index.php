@@ -14,7 +14,7 @@ require_once 'views/templates/nav.php';
 
     <h1 class="titre">HTML</h1>
 
-    <img class="image" src="" alt="">
+    <img class="image" src="assets/img/" alt="">
 
     <p src="htmlText">HTML</p>
     <p src="cssText">CSS</p>
@@ -22,29 +22,29 @@ require_once 'views/templates/nav.php';
     <p src="phpText">PHP</p>
 
     <div class="menuFooter">
-        <button class="htmlButton">
+        <button class="htmlButton language-button">
             HTML
         </button>
 
-        <button class="cssButton">
+        <button class="cssButton language-button">
             CSS
         </button>
         <!-- Choix Style -->
-        <div class="choice_css hidden-css">
+        <!-- <div class="choice_css hidden-css">
             <button>style1</button>
             <button>style2</button>
-        </div>
+        </div> -->
 
-        <button class="jsButton">
+        <button class="jsButton language-button">
             JAVASCRIPT
         </button>
         <!-- Choix Function -->
-        <div class="hidden-js">
+        <!-- <div class="hidden-js">
             <button>function1</button>
             <button>function2</button>
-        </div>
+        </div> -->
 
-        <button class="phpButton">
+        <button class="phpButton language-button">
             PHP
         </button>
     </div>
