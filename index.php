@@ -8,19 +8,64 @@ require_once 'views/templates/nav.php';
 
 ?>
 
-<!-- HTML -->
+<!-- =============== FOOTER =============== -->
 
-<div class="style1">
+<main>
+
 
     <h1 class="titre">HTML</h1>
 
-    <img class="image" src="assets/img/spirohtml.svg" alt="">
+    <img class="image" src="./assets/img/spiral_html.svg" alt="">
 
     <p src="htmlText">HTML</p>
     <p src="cssText">CSS</p>
     <p src="jsText">JAVASCRIPT</p>
     <p src="phpText">PHP</p>
 
+
+
+    <!-- =============== FORMULAIRE D'INSCRIPTION =============== -->
+
+    <div class="registre hidden-registration">
+
+        <h1>Registration Form</h1>
+
+        <form action="./controllers/session/signupController.php" method="POST">
+
+            <label for="pseudo">Pseudo</label>
+            <input type="text" name="pseudo" id="pseudo">
+
+            <label for="password">Password</label>
+            <input type="password" name="password" id="password">
+
+            <button type="submit" name="register">Register</button>
+        </form>
+
+    </div>
+
+    <!-- =============== FORMULAIRE DE CONNEXION =============== -->
+
+    <div class="login hidden-login">
+        <h1>LOG IN</h1>
+
+        <form action="./controllers/session/loginController.php" method="POST">
+
+            <label for="pseudo">Pseudo</label>
+            <input type="text" name="pseudo" id="pseudo">
+
+            <label for="password">Password</label>
+            <input type="password" name="password" id="password">
+
+            <button type="submit" name="login">Se connecter</button>
+        </form>
+    </div>
+
+
+</main>
+
+<!-- =============== FOOTER =============== -->
+
+<footer>
     <div class="menuFooter">
         <button class="htmlButton language-button">
             HTML
@@ -48,44 +93,7 @@ require_once 'views/templates/nav.php';
             PHP
         </button>
     </div>
-
-    <!-- Formulaire d'inscription -->
-    <div class="registre hidden-registration">
-
-        <h1>Registration Form</h1>
-
-        <form action="./controllers/session/signupController.php" method="POST">
-
-            <label for="pseudo">Pseudo</label>
-            <input type="text" name="pseudo" id="pseudo">
-
-            <label for="password">Password</label>
-            <input type="password" name="password" id="password">
-
-            <button type="submit" name="register">Register</button>
-        </form>
-
-    </div>
-
-    <div class="login hidden-login">
-        <h1>LOG IN</h1>
-
-        <form action="./controllers/session/loginController.php" method="POST">
-
-            <label for="pseudo">Pseudo</label>
-            <input type="text" name="pseudo" id="pseudo">
-
-            <label for="password">Password</label>
-            <input type="password" name="password" id="password">
-
-            <button type="submit" name="login">Se connecter</button>
-        </form>
-    </div>
-</div>
-
-<!-- A rajouter -->
-<!-- Login coté view -->
-<!-- Sign up coté view -->
+</footer>
 
 <?php
 // require_once 'controllers/router.php';
