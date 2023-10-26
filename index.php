@@ -12,7 +12,7 @@ require_once 'views/templates/nav.php';
 
 <main>
 
-<button class="buttonLogin">login</button>
+    <button class="buttonLogin">login</button>
     <h1 class="titre">HTML</h1>
 
     <img class="image" src="assets/img/spirohtml.svg" alt="">
@@ -22,33 +22,7 @@ require_once 'views/templates/nav.php';
     <p src="jsText">JAVASCRIPT</p>
     <p src="phpText">PHP</p>
 
-    <div class="menuFooter">
-        <button class="htmlButton">
-            HTML
-        </button>
 
-        <button class="cssButton">
-            CSS
-        </button>
-        <!-- Choix Style -->
-        <div class="choice_css hidden-css">
-            <button>style1</button>
-            <button>style2</button>
-        </div>
-
-        <button class="jsButton">
-            JAVASCRIPT
-        </button>
-        <!-- Choix Function -->
-        <div class="hidden-js">
-            <button>function1</button>
-            <button>function2</button>
-        </div>
-
-        <button class="phpButton">
-            PHP
-        </button>
-    </div>
 
     <!-- Formulaire d'inscription -->
     <div class="registre hidden-registration">
