@@ -96,7 +96,7 @@ body{
     position: absolute;
     top: 6em; 
     left: 54em;
-    z-index: 1;
+    z-index: 2;
 }
 
 .forme6:hover {
@@ -142,3 +142,27 @@ body{
     border-style: 2px solid;
     box-shadow: 0px 0px 100px 0px rgba(245, 13, 253, 0.762);
 }
+
+.spirovert{
+    width: 24%;
+    position: absolute;
+    top: 3em; 
+    left: 8em;
+    z-index: 1;
+} 
+
+.spirovert:hover {
+    width: 10%;
+    position: absolute;
+    top: 3em; 
+    left: 8em;
+    z-index: 1;
+    transition: 4sec;
+}
+.spirojaune{
+    width: 8%;
+    position: absolute;
+    top: 9em; 
+    left: 57em;
+    z-index: 1;
+} 
