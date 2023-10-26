@@ -1,44 +1,46 @@
 <!-- LOG IN - SE CONNECTER -->
 
 <?php
-
+session_start();
 
 //var_dump($_POST);
-/*
-if (isset($_POST['login'])) {
+
+if (isset($_POST['login'], $_POST['password'])) {
 
     if (empty($_POST['pseudo']) || empty($_POST['password'])) {
 
         $message = "<span>All fields are required</span>";
     } else {
+
         // Connexion à la base de données
-        include_once "models/database.php";
+        include_once "../../models/db.php";
+
+      
 
         // Création de la requête
-        $query = "SELECT * FROM customer WHERE pseudo = :pseudo AND password = sha2(:password, 256)";
+        $query = "SELECT * FROM user WHERE pseudo = :pseudo AND password = sha2(:password, 256)";
 
-        $objet = $database->prepare($query);
+        $stmt = $database->prepare($query);
 
-        $objet->execute(
-            array(
-                ":pseudo" => $_POST['pseudo'],
-                ":password" => $_POST['password']
-            )
-        );
-
-        $count = $objet->rowCount();
-        $arrayResult = $objet->fetchAll(PDO::FETCH_ASSOC);
+        $stmt->bindParam(":pseudo", $_POST['pseudo']);
+        $stmt->bindParam(":password", $_POST['password']);
 
 
-        if ($count > 0) {
+        if ($stmt->execute()) {
+            // La méthode fetch(PDO::FETCH_ASSOC) permet d'organiser les données renvoyées en un tableau associatif.
+            // Ici les données renvoyées sont l'email et le password
+            $user = $stmt->fetch(PDO::FETCH_ASSOC);
+            var_dump($user);
 
-            // Ajouter des variables session 
+            // * Si user renvoie true cela signifie que l'email et le password sont correctes
+            if ($user) {
+                $_SESSION['id'] = $user['id'];
+                $_SESSION['pseudo'] = $user['pseudo'];
+                $_SESSION['style'] = $user['style'];
+                $_SESSION['fonctionjs'] = $user['fonctionjs'];
 
-            $_SESSION['id'] = $arrayResult[0]['id'];
-            $_SESSION['pseudo'] = $arrayResult[0]['pseudo'];
-            header('Location: ?page=fiche');
-        } else {
-            $message = "<span>Wrong Data</span>";
+                header("Location: ../../index.php");
+            }
         }
     }
 }

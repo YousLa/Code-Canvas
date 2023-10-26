@@ -8,48 +8,25 @@ require_once 'views/templates/nav.php';
 
 ?>
 
-<!-- HTML -->
+<!-- =============== FOOTER =============== -->
 
-<div class="style1">
+<main>
 
-    <h1>HTML</h1>
 
-    <img src="" alt="">
+    <h1 class="titre">HTML</h1>
 
-    <p>HTML</p>
-    <p>CSS</p>
-    <p>JAVASCRIPT</p>
-    <p>PHP</p>
+    <img class="image" src="assets/img/spirohtml.svg" alt="">
 
-    <div>
-        <button>
-            HTML
-        </button>
+    <p src="htmlText">HTML</p>
+    <p>Salut, je suis HTML (Hypertext Markup Language) et je suis le langage de base d'une page web. Je m'occupe de la structure. Imagine-moi comme l'architecte qui dessine les plans pour une maison. Je dis où mettre les images, le texte et les liens. En gros, je construis la base solide de la page. Mon importance est primordial mais j'avoue que je suis un peu moche quand j'agis tout seul !</p>
+    <p src="cssText">CSS</p>
+    <p src="jsText">JAVASCRIPT</p>
+    <p src="phpText">PHP</p>
 
-        <button>
-            CSS
-        </button>
-        <!-- Choix Style -->
-        <div class="hidden-css">
-            <button>style1</button>
-            <button>style2</button>
-        </div>
 
-        <button>
-            JAVASCRIPT
-        </button>
-        <!-- Choix Function -->
-        <div class="hidden-js">
-            <button>function1</button>
-            <button>function2</button>
-        </div>
 
-        <button>
-            PHP
-        </button>
-    </div>
-
-    <div class="hidden-form">
+    <!-- Formulaire d'inscription -->
+    <div class="registre hidden-element">
 
         <h1>Registration Form</h1>
 
@@ -65,11 +42,80 @@ require_once 'views/templates/nav.php';
         </form>
 
     </div>
-</div>
 
-<!-- A rajouter -->
-<!-- Login coté view -->
-<!-- Sign up coté view -->
+
+    <!-- formulaire de login  -->
+
+
+<div class="formLogin">
+     <section class="hidden-element container loginSection">
+        <div class="login-container">
+            <div class="circle circle-one"></div>
+            <div class="form-container">
+
+                <h1 class="opacity">LOGIN</h1>
+                <form action="./controllers/session/signupController.php" method="POST">
+
+                    <input type="text" name="pseudo" id="pseudo" placeholder="USERNAME" />
+                    <input type="password" name="password" id="password" placeholder="PASSWORD" />
+                    <button class="submitRegitre opacity">SUBMIT</button>
+                </form>
+
+
+                <div class="register-forget opacity">
+                    <a  id="registration" href="">REGISTER</a>
+
+                </div>
+            </div>
+            <!-- <div class="circle circle-two"></div> -->
+        </div>
+        <div class="theme-btn-container"></div>
+    </section>
+    </div>
+
+</main>
+
+<!-- =============== FOOTER =============== -->
+
+<footer>
+    <div class="menuFooter">
+        <button class="htmlButton language-button">
+            HTML
+        </button>
+
+        <button class="cssButton language-button">
+            CSS
+        </button>
+        <!-- Choix Style -->
+        <div class="choice_css hidden-element">
+            <button class="choiceStatique">
+                <div>
+                    <h2>Statique</h2>
+                    <img src="assets/img/button/style1.png" alt="Style 1">
+                </div>
+            </button>
+            <button class="choiceDynamique">
+                <div>
+                    <h2>Dynamique</h2>
+                    <img src="assets/img/button/style1.png" alt="Style 2">
+                </div>
+            </button>
+        </div>
+
+        <button class="jsButton language-button">
+            JAVASCRIPT
+        </button>
+        <!-- Choix Function -->
+        <!-- <div class="">
+            <button>function1</button>
+            <button>function2</button>
+        </div> -->
+
+        <button class="phpButton language-button">
+            PHP
+        </button>
+    </div>
+</footer>
 
 <?php
 // require_once 'controllers/router.php';
