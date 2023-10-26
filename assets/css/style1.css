@@ -229,7 +229,7 @@
 /* ^ ============== Bouton CHOICHE ============== */
 
 /* 1. DIV MASTER */
-.choice_css {
+.style1 .choice_css {
     width: 30rem;
     height: 15rem;
     position: absolute;
@@ -241,23 +241,23 @@
 }
 
 /* 2. BUTTON CARDS */
-.choice_css button {
+.style1 .choice_css button {
     width: 100%;
     height: 100%;
 }
 
 /* 3. DIV CARDS */
-.choice_css button div {
+.style1 .choice_css button div {
     width: 100%;
     height: 100%;
 }
 
 /* 4. DIV H2 */
-.choice_css button div h2 {
+.style1 .choice_css button div h2 {
     font-size: x-large;
 }
 
-.choice_css button img {
+.style1 .choice_css button img {
     width: 12rem;
     border-radius: 0.25%;
 }
