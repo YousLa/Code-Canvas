@@ -16,8 +16,10 @@ require_once 'views/templates/nav.php';
     <h1 class="titre">HTML</h1>
     <h1 class="titre">CSS</h1>
 
-    <img class="image" src="assets/img/spirohtml.svg" alt="">
-
+    <div class="spirohtml">
+        <img class="image" src="assets/img/spirohtml1.jpg" alt="">
+        <img class="image" src="assets/img/spirohtml2.jpg" alt="">
+    </div>
     <!-- page css static -->
 
     <div class="container">
@@ -64,26 +66,6 @@ require_once 'views/templates/nav.php';
     <p src="jsText">JAVASCRIPT</p>
     <p src="phpText">PHP</p>
 
-
-
-    <!-- Formulaire d'inscription -->
-    <!-- <div class="registre hidden-element">
-
-        <h1>Registration Form</h1>
-
-        <form action="./controllers/session/signupController.php" method="POST">
-
-            <label for="pseudo">Pseudo</label>
-            <input type="text" name="pseudo" id="pseudo">
-
-            <label for="password">Password</label>
-            <input type="password" name="password" id="password">
-
-            <button type="submit" name="register">Register</button>
-        </form>
-
-    </div> -->
-
     <div class="registre hidden-element">
         <section class="container">
             <div class="login-container">
@@ -96,7 +78,7 @@ require_once 'views/templates/nav.php';
                         <input type="text" name="pseudo" id="pseudo" />
                         <label for="password">Password</label>
                         <input type="password" name="password" id="password" placeholder="PASSWORD" />
-                        <button class="submitRegitre opacity">Register</button>
+                        <button class="submitRegitre opacity">S'inscrire</button>
                     </form>
                 </div>
                 <!-- <div class="circle circle-two"></div> -->
@@ -123,16 +105,16 @@ require_once 'views/templates/nav.php';
                 <div class="form-container">
 
                     <h1 class="opacity">LOGIN</h1>
-                    <form action="./controllers/session/signupController.php" method="POST">
+                    <form action="./controllers/session/loginController.php" method="POST">
 
                         <input type="text" name="pseudo" id="pseudo" placeholder="USERNAME" />
                         <input type="password" name="password" id="password" placeholder="PASSWORD" />
-                        <button class="submitRegitre opacity">SUBMIT</button>
+                        <button class="submitRegitre opacity">Connexion</button>
                     </form>
 
 
-                    <div class="register-forget opacity">
-                        <a id="registration" href="">REGISTER</a>
+                    <div class="register-forget opacity">Pas encore inscrit ?
+                        <a id="registration" href="">S'inscrire.</a>
 
                     </div>
                 </div>
@@ -157,17 +139,11 @@ require_once 'views/templates/nav.php';
         </button>
         <!-- Choix Style -->
         <div class="choice_css hidden-element">
-            <button class="choiceStatique">
-                <div>
-                    <h2>Statique</h2>
-                    <img src="assets/img/button/style1.png" alt="Style 1">
-                </div>
+            <button class="choiceStatique language-button">
+                <h2>Statique</h2>
             </button>
-            <button class="choiceDynamique">
-                <div>
-                    <h2>Dynamique</h2>
-                    <img src="assets/img/button/style1.png" alt="Style 2">
-                </div>
+            <button class="choiceDynamique language-button">
+                Dynamique
             </button>
         </div>
 
