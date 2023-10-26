@@ -3,12 +3,13 @@ let choicesStyle = document.querySelector(".choice_css");
 let buttonCss = document.querySelector(".cssButton");
 let buttonJs = document.querySelector(".jsButton");
 let buttonLogin = document.querySelector(".buttonLogin");
-let modalLogin = document.querySelector(".loginSection");
+let modalLogin = document.querySelector(".formLogin");
 let choiceStatique = document.querySelector(".choiceStatique");
 let choiceDynamique = document.querySelector(".choiceDynamique");
 let leBody = document.querySelector("body");
 let buttonSubmitRegistre = document.querySelector(".submitRegitre");
 let buttonRegister = document.querySelector("#registration");
+let madaRegister = document.querySelector(".registre");
 let activeJs = false;
 /* le click sur le button html*/
 buttonHtml.addEventListener('click', resetCss)
@@ -40,6 +41,7 @@ function choiceSStyleStatique(event) {
     /*appliquer le style*/
     event.preventDefault();
     document.querySelector(".formLogin").classList.add("withcss");
+    madaRegister.classList.add("withcss");
     /*cacher les 2  buttons style1 et style2*/
     choicesStyle.classList.remove('active-element');
     choicesStyle.classList.add('hidden-element');
@@ -92,13 +94,28 @@ function showloginModal(event) {
    
 }
 
-/* gérer le click sur buttonSubmitRegistre*/
+/* gérer le click sur buttonSubmitlogin*/
 
 buttonSubmitRegistre.addEventListener('click', dontRegister);
 function dontRegister(event) {
     event.preventDefault();
     alert("Je ne peux pas t'inscrire dans la base de données, continue à chercher le langage qui te permettra de créer ton compte.");
 }
+
+
+/*gérer le click sur le bouton register*/
+
+buttonRegister.addEventListener('click',showModalRegister);
+function showModalRegister(event) {
+    event.preventDefault();
+
+
+    modalLogin.classList.remove('active-element');
+    modalLogin.classList.add('hidden-element');
+    madaRegister.classList.remove('hidden-element');
+    madaRegister.classList.add('active-element');
+}
+
 
 const themes = [
     {

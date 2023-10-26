@@ -1,4 +1,4 @@
-.styls1 main {
+.style1 main {
     font-family: "nimbusmono-regular";
 }
 
@@ -260,3 +260,195 @@
     width: 12rem;
     border-radius: 0.25%;
 }
+
+/* css static */
+
+.style1 {
+    background-color: bisque;
+}
+.style1 .forme1{
+    width: 20em;
+    height: 18em;
+    border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
+    background-color: #c677af;
+    opacity: 0.3;
+    position: absolute;
+    left: 0em;
+    top: 8em;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.style1 .forme1:hover {
+    opacity: 1;
+}
+
+.style1 .forme2{
+    width: 17em;
+    height: 18em;
+    border-radius: 54% 46% 24% 76% / 79% 52% 48% 21%;
+    background-color: #1d8e48;
+    opacity: 0.3;
+    position: absolute;
+    left: 12em;
+    top: 8em;
+    z-index: 1;
+}
+
+.style1 .forme2:hover {
+    opacity: 0.6;
+}
+
+.style1 .forme3{
+    width: 17em;
+    height: 15em;
+    border-radius: 76% 24% 87% 13% / 79% 8% 92% 21% ;
+    background-color: #375ca4;
+    opacity: 0.5;
+    position: absolute;
+    top: 8em; 
+    left: 20em;
+    z-index: 1;
+}
+
+.style1 .forme3:hover {
+    border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
+    background-color: rgba(55,92,164,0.58);
+    box-shadow: 0px 0px 100px 0px rgba(245, 13, 253, 0.9);
+}
+
+.style1 .forme4{
+    width: 17em;
+    height: 15em;
+    border-radius: 10% 74% 47% 28% / 11% 63% 23% 74%;
+    background-color: #c24d22;
+    opacity: 0.6;
+    position: absolute;
+    top: 6em; 
+    left: 32em;
+    z-index: 1;
+}
+
+.style1 .forme4:hover {
+    opacity: 0.2;
+}
+
+.style1 .forme5{
+    width: 17em;
+    height: 18em;
+    border-radius: 30% 47% 33% 28% / 31% 40% 41% 53% ;
+    background-color: #f4e736;
+    opacity: 0.6;
+    position: absolute;
+    top: 5em; 
+    left: 42em;
+    z-index: 1;
+}
+
+.style1 .forme5:hover {
+    opacity: 0.2;
+}
+
+.style1 .forme5:hover .container{
+    background-color: #1d8e48;
+}
+
+.style1 .forme6{
+    width: 17em;
+    height: 18em;
+    border-radius: 20% 80% 47% 53% / 0% 58% 42% 100% ;
+    background-color: #c677af;
+    opacity: 1;
+    position: absolute;
+    top: 6em; 
+    left: 54em;
+    z-index: 2;
+}
+
+.style1 .forme6:hover {
+    opacity: 0.2;
+    border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
+    top: 8em; 
+    left: 54em;
+}
+.style1 .forme7{
+    width: 17em;
+    height: 18em;
+    border-radius: 52% 48% 47% 53% / 50% 74% 26% 50%  ;
+    background-color: #1d8e48;
+    opacity: 0.5;
+    position: absolute;
+    top: 6em; 
+    left: 65em;
+    z-index: 1;
+}
+
+.style1 .forme7:hover {
+    opacity: 0.8;
+    border-radius: 76% 24% 87% 13% / 79% 8% 92% 21% ;
+    top: 8em; 
+    left: 65em;
+}
+
+.style1 .forme8{
+    width: 17em;
+    height: 18em;
+    border-radius: 61% 39% 70% 30% / 37% 83% 17% 63%;
+    background-color: #375ca4;
+    opacity: 0.7;
+    position: absolute;
+    top: 7em; 
+    left: 78em;
+    z-index: 1;
+}
+
+.style1 .forme8:hover {
+    background-color:rgba(244,231,54,0.59);
+    border-radius: 61% 39% 70% 30% / 37% 83% 17% 63%;
+    border-style: 2px solid;
+    box-shadow: 0px 0px 100px 0px rgba(245, 13, 253, 0.762);
+    overflow: hidden;
+}
+
+.style1 .forme9{
+    width: 17em;
+    height: 18em;
+    border-radius: 61% 39% 70% 30% / 37% 83% 17% 63%;
+    background-color: #f4e736 ;
+    opacity: 0.4;
+    position: absolute;
+    top: 7em; 
+    left: 90em;
+    z-index: 4;
+}
+
+.style1 .forme9:hover {
+    background-color:rgba(200,125,54,0.8);
+    border-radius: 61% 39% 70% 30% / 37% 83% 17% 63%;
+    overflow: hidden;
+}
+
+.style1 .spirovert{
+    width: 24%;
+    position: absolute;
+    top: 3em; 
+    left: 8em;
+    z-index: 1;
+} 
+
+.style1 .spirovert:hover {
+    width: 10%;
+    position: absolute;
+    top: 3em; 
+    left: 8em;
+    z-index: 1;
+    transition: 4sec;
+}
+
+.style1 .spirojaune{
+    width: 8%;
+    position: absolute;
+    top: 9em; 
+    left: 57em;
+    z-index: 1;
+} 
