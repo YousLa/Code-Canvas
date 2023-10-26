@@ -40,6 +40,21 @@ require_once 'views/templates/nav.php';
         <div class="forme9"></div>
     </div>
 
+    <!-- page CSS animations -->
+    <div class = "container-animation">
+        <div>
+            <img src="./assets/img/spirovertAn.svg" alt="" class = "vert">
+        </div>
+        <div>         
+            <img src="./assets/img/spirorangeAn.svg" alt="" class = "orange">
+        </div>
+        <div>
+            <img src="./assets/img/spirobleuAn.svg" alt="" class = "bleu">
+        </div>
+        <div>
+            <img src="./assets/img/spiroroseAn.svg" alt="" class = "rose">
+        </div>
+    </div>
 
     <!-- Textes -->
 

@@ -8,8 +8,8 @@
     }
 }
 
-.container::before,
-.container::after {
+.style2 .container-animation::before,
+.style2 .container-animation::after {
     content: "";
     width: 60vmax;
     height: 60vmax;
@@ -24,19 +24,7 @@
     pointer-events: none;
 }
 
-/* .container::after {
-    width: 50vmin;
-    height: 50vmin;
-    background: rgba(243, 158, 39, 0.2);
-    left: auto;
-    top: auto;
-    right: -5vmin;
-    bottom: 0;
-    animation: morph 10s linear infinite alternate, spin 18s linear infinite;
-    transform-origin: 20% 20%;
-} */
-
-.container::after {
+.style2 .container-animation::after {
     width: 80vmin;
     height: 80vmin;
     background: rgba(248, 239, 119, 0.4);
@@ -53,14 +41,11 @@
     box-sizing: border-box;
 }
 
-html,
+/* .style2 html,
 body {
     width: 100%;
     overflow: hidden;
-    /* color: #ebe4e4bc;
-    font-family: "M PLUS Rounded 1c", sans-serif; */
-}
-
+} */
 
 @keyframes slidein {
     from {
@@ -86,7 +71,7 @@ body {
     }
 }
 
-.orange {
+.style2 .orange {
     position: absolute;
     top: 5em;
     width: 15%;
@@ -95,14 +80,14 @@ body {
     z-index: 3;
 }
 
-.vert {
+.style2 .vert {
     position: relative;
     width: 20%;
     animation: slidein 15s infinite alternate-reverse, spin 10s infinite ease;
     z-index: 2;
 }
 
-.bleu {
+.style2 .bleu {
     position: absolute;
     top: 20em;
     left: 32em;
@@ -113,14 +98,14 @@ body {
     z-index: 4;
 }
 
-.bleu:hover {
+.style2 .bleu:hover {
     animation-name: fast-spin;
     animation-duration: 1s;
     animation-iteration-count: 1;
     animation-timing-function: ease-in-out;
 }
 
-.rose {
+.style2 .rose {
     position: absolute;
     top: 10em;
     right: 30em;
@@ -128,7 +113,7 @@ body {
     z-index: 5;
 }
 
-.rose:hover {
+.style2 .rose:hover {
     animation-name: spin;
     animation-duration: 1.5s;
     animation-iteration-count: 1;

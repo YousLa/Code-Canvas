@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="assets/css/style1.css">
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/app.css">
+    <link rel="stylesheet" href="assets/css/animations.css">
     <script src="assets/js/script.js" defer></script>
     <title>Code Canvas</title>
 
