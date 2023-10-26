@@ -25,10 +25,11 @@
         <div class="forme5"></div>
         <div class="forme6"></div>
         <div class = "spirojaune">
-        <img src="./images/spirojaune.svg" alt="">
+        <img src="./images/spiro" alt="">
         </div>
         <div class="forme7"></div>
         <div class="forme8"></div>
+</div>
 
 </body>
 </html>
