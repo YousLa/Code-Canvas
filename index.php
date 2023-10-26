@@ -12,7 +12,7 @@ require_once 'views/templates/nav.php';
 
 <main>
 
-
+    <button class="buttonLogin">login</button>
     <h1 class="titre">HTML</h1>
 
     <img class="image" src="assets/img/spirohtml.svg" alt="">
@@ -24,8 +24,7 @@ require_once 'views/templates/nav.php';
 
 
 
-    <!-- =============== FORMULAIRE D'INSCRIPTION =============== -->
-
+    <!-- Formulaire d'inscription -->
     <div class="registre hidden-registration">
 
         <h1>Registration Form</h1>
@@ -42,8 +41,6 @@ require_once 'views/templates/nav.php';
         </form>
 
     </div>
-
-    <!-- =============== FORMULAIRE DE CONNEXION =============== -->
 
     <div class="login hidden-login">
         <h1>LOG IN</h1>
