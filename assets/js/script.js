@@ -2,33 +2,72 @@ let buttonHtml = document.querySelector(".htmlButton");
 let choicesStyle = document.querySelector(".choice_css");
 let buttonCss = document.querySelector(".cssButton");
 let buttonLogin = document.querySelector(".buttonLogin");
-let modalLogin =  document.querySelector(".loginSection");
-//click sur le boutton css
+let modalLogin = document.querySelector(".loginSection");
+let choiceStatique = document.querySelector(".choiceStatique");
+let choiceDynamique = document.querySelector(".choiceDynamique");
+let leBody = document.querySelector("body");
+/* le click sur le button html*/
+buttonHtml.addEventListener('click', resetCss)
+function resetCss(event) {
 
-
-
-buttonCss.addEventListener('click',choiceStyle);
-
-function choiceStyle(event)
-{
- 
     event.preventDefault();
-  
-    choicesStyle.classList.remove('hidden-css');
-    choicesStyle.classList.add('active-css');
+
+    leBody.classList.remove("style1");
+    leBody.classList.remove("style2");
+
+}
+
+//click sur le boutton css
+buttonCss.addEventListener('click', choiceStyle);
+
+function choiceStyle(event) {
+
+    event.preventDefault();
+
+    choicesStyle.classList.remove('hidden-element');
+    choicesStyle.classList.add('active-element');
+
+}
+
+/* Appliquer le style statique sur la page si l'utilisateur choisi le premier style*/
+choiceStatique.addEventListener('click', choiceSStyleStatique);
+
+function choiceSStyleStatique(event) {
+    /*appliquer le style*/
+    event.preventDefault();
+    /*cacher les 2  buttons style1 et style2*/
+    choicesStyle.classList.remove('active-element');
+    choicesStyle.classList.add('hidden-element');
+    leBody.classList.remove("style2");
+    document.querySelector("body").classList.add("style1");
+}
+
+/* Appliquer le style dynamique sur la page si l'utilisateur choisi le deuxieme style*/
+choiceDynamique.addEventListener('click', choiceSStyleDynamique);
+
+function choiceSStyleDynamique(event) {
+
+
+    event.preventDefault();
+    /*cacher les 2  buttons style1 et style2*/
+    choicesStyle.classList.remove('active-element');
+    choicesStyle.classList.add('hidden-element');
+    leBody.classList.remove("style1");
+    /*appliquer le style dynamique */
+    document.querySelector("body").classList.add("style2");
 
 }
 
 
-buttonLogin.addEventListener('click',showloginModal);
 
-function showloginModal(event)
-{
- 
+buttonLogin.addEventListener('click', showloginModal);
+
+function showloginModal(event) {
+
     event.preventDefault();
-  
-    modalLogin.classList.remove('hidden-login');
-    modalLogin.classList.add('active-login');
+
+    modalLogin.classList.remove('hidden-element');
+    modalLogin.classList.add('active-element');
 
 }
 

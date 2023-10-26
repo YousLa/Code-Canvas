@@ -1,9 +1,9 @@
- .hidden-css ,.hidden-registration,.hidden-js,.hidden-login{
+ .hidden-element {
    display: none;
    z-index: 1;
 } 
 
- .active-css , .active-registration ,.active-js , .active-login
+ .active-element
 {
    z-index: 1;
     display: flex;

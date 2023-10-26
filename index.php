@@ -12,7 +12,7 @@ require_once 'views/templates/nav.php';
 
 <main>
 
-    <button class="buttonLogin">login</button>
+
     <h1 class="titre">HTML</h1>
 
     <img class="image" src="assets/img/spirohtml.svg" alt="">
@@ -25,7 +25,7 @@ require_once 'views/templates/nav.php';
 
 
     <!-- Formulaire d'inscription -->
-    <div class="registre hidden-registration">
+    <div class="registre hidden-element">
 
         <h1>Registration Form</h1>
 
@@ -47,7 +47,7 @@ require_once 'views/templates/nav.php';
 
 
 
-     <section class="hidden-login container loginSection">
+     <section class="hidden-element container loginSection">
         <div class="login-container">
             <div class="circle circle-one"></div>
             <div class="form-container">
@@ -72,14 +72,6 @@ require_once 'views/templates/nav.php';
     </section>
 
 
-
-
-
-
-
-
-    <
-
 </main>
 
 <!-- =============== FOOTER =============== -->
@@ -94,16 +86,16 @@ require_once 'views/templates/nav.php';
             CSS
         </button>
         <!-- Choix Style -->
-         <div class="choice_css hidden-css">
-            <button>style1</button>
-            <button>style2</button>
+         <div class="choice_css hidden-element">
+            <button class="choiceStatique">style1</button>
+            <button class="choiceDynamique">style2</button>
         </div> 
 
         <button class="jsButton language-button">
             JAVASCRIPT
         </button>
         <!-- Choix Function -->
-        <!-- <div class="hidden-js">
+        <!-- <div class="">
             <button>function1</button>
             <button>function2</button>
         </div> -->

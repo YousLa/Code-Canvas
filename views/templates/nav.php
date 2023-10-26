@@ -8,7 +8,7 @@
                 <li><a href="controllers/session/logoutController.php">Log out</a></li>
                 <!-- Si la varibale session n'existe pas on affiche le bouton de connexion -->
             <?php else : ?>
-                <li><a href="controllers/session/loginController.php">Login</a></li>
+                <li><a class="buttonLogin" href="controllers/session/loginController.php">Login</a></li>
             <?php endif; ?>
         </ul>
     </nav>
