@@ -44,10 +44,10 @@ require_once 'views/templates/nav.php';
     </div>
 
 
-     <!-- formulaire de login  -->
+    <!-- formulaire de login  -->
 
 
-
+<div class="formLogin">
      <section class="hidden-element container loginSection">
         <div class="login-container">
             <div class="circle circle-one"></div>
@@ -58,12 +58,12 @@ require_once 'views/templates/nav.php';
 
                     <input type="text" name="pseudo" id="pseudo" placeholder="USERNAME" />
                     <input type="password" name="password" id="password" placeholder="PASSWORD" />
-                    <button class="opacity">SUBMIT</button>
+                    <button class="submitRegitre opacity">SUBMIT</button>
                 </form>
 
 
                 <div class="register-forget opacity">
-                    <a id="registration" href="">REGISTER</a>
+                    <a  id="registration" href="">REGISTER</a>
 
                 </div>
             </div>
@@ -71,7 +71,7 @@ require_once 'views/templates/nav.php';
         </div>
         <div class="theme-btn-container"></div>
     </section>
-
+    </div>
 
 </main>
 
@@ -87,10 +87,20 @@ require_once 'views/templates/nav.php';
             CSS
         </button>
         <!-- Choix Style -->
-         <div class="choice_css hidden-element">
-            <button class="choiceStatique">style1</button>
-            <button class="choiceDynamique">style2</button>
-        </div> 
+        <div class="choice_css hidden-element">
+            <button class="choiceStatique">
+                <div>
+                    <h2>Statique</h2>
+                    <img src="assets/img/button/style1.png" alt="Style 1">
+                </div>
+            </button>
+            <button class="choiceDynamique">
+                <div>
+                    <h2>Dynamique</h2>
+                    <img src="assets/img/button/style1.png" alt="Style 2">
+                </div>
+            </button>
+        </div>
 
         <button class="jsButton language-button">
             JAVASCRIPT
