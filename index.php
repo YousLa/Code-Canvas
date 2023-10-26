@@ -14,8 +14,35 @@ require_once 'views/templates/nav.php';
 
 
     <h1 class="titre">HTML</h1>
+    <h1 class="titre">CSS</h1>
 
-    <img class="image" src="assets/img/spirohtml.svg" alt="">
+    <img class="image" src="assets/img/spirohtml1.svg" alt="">
+    <img class="image" src="assets/img/spirohtml2.svg" alt="">
+
+    <!-- page css static -->
+
+    <div class="container">
+
+
+        <div class="forme1"></div>
+        <div class="spirovert">
+            <img src="./assets/img/spiro vert- 1.svg" alt="">
+        </div>
+        <div class="forme2"></div>
+        <div class="forme3"></div>
+        <div class="forme4"></div>
+        <div class="forme5"></div>
+        <div class="forme6"></div>
+        <div class="spirojaune">
+            <img src="./assets/img/spirojaune.svg" alt="">
+        </div>
+        <div class="forme7"></div>
+        <div class="forme8"></div>
+        <div class="forme9"></div>
+    </div>
+
+
+    <!-- Textes -->
 
     <p src="htmlText">HTML</p>
     <p>Salut, je suis HTML (Hypertext Markup Language) et je suis le langage de base d'une page web. Je m'occupe de la structure. Imagine-moi comme l'architecte qui dessine les plans pour une maison. Je dis où mettre les images, le texte et les liens. En gros, je construis la base solide de la page. Mon importance est primordial mais j'avoue que je suis un peu moche quand j'agis tout seul !</p>
@@ -24,54 +51,61 @@ require_once 'views/templates/nav.php';
     <p src="phpText">PHP</p>
 
     <div class="registre hidden-element">
-     <section class="container">
-        <div class="login-container">
-            <div class="circle circle-one"></div>
-            <div class="form-container">
+        <section class="container">
+            <div class="login-container">
+                <div class="circle circle-one"></div>
+                <div class="form-container">
 
-                <h1 class="opacity">Inscription</h1>
-                <form action="./controllers/session/signupController.php" method="POST">
-                    <label for="pseudo">Pseudo</label>
-                    <input type="text" name="pseudo" id="pseudo" />
-                    <label for="password">Password</label>
-                    <input type="password" name="password" id="password" placeholder="PASSWORD" />
-                    <button class="submitRegitre opacity">Register</button>
-                </form>
+                    <h1 class="opacity">Inscription</h1>
+                    <form action="./controllers/session/signupController.php" method="POST">
+                        <label for="pseudo">Pseudo</label>
+                        <input type="text" name="pseudo" id="pseudo" />
+                        <label for="password">Password</label>
+                        <input type="password" name="password" id="password" placeholder="PASSWORD" />
+                        <button class="submitRegitre opacity">Register</button>
+                    </form>
+                </div>
+                <!-- <div class="circle circle-two"></div> -->
             </div>
-            <!-- <div class="circle circle-two"></div> -->
-        </div>
-        <div class="theme-btn-container"></div>
-    </section>
+            <div class="theme-btn-container"></div>
+        </section>
     </div>
+
+
+
+
+
+
+
 
 
     <!-- formulaire de login  -->
 
 
-<div class="formLogin hidden-element">
-     <section class="container loginSection">
-        <div class="login-container">
-            <div class="circle circle-one"></div>
-            <div class="form-container">
+    <div class="formLogin hidden-element">
+        <section class="container loginSection">
+            <div class="login-container">
+                <div class="circle circle-one"></div>
+                <div class="form-container">
 
-                <h1 class="opacity">LOGIN</h1>
-                <form action="./controllers/session/signupController.php" method="POST">
+                    <h1 class="opacity">LOGIN</h1>
+                    <form action="./controllers/session/signupController.php" method="POST">
 
-                    <input type="text" name="pseudo" id="pseudo" placeholder="USERNAME" />
-                    <input type="password" name="password" id="password" placeholder="PASSWORD" />
-                    <button class="submitRegitre opacity">SUBMIT</button>
-                </form>
+                        <input type="text" name="pseudo" id="pseudo" placeholder="USERNAME" />
+                        <input type="password" name="password" id="password" placeholder="PASSWORD" />
+                        <button class="submitRegitre opacity">SUBMIT</button>
+                    </form>
 
 
-                <div class="register-forget opacity">
-                    <a  id="registration" href="">REGISTER</a>
+                    <div class="register-forget opacity">
+                        <a id="registration" href="">REGISTER</a>
 
+                    </div>
                 </div>
+                <!-- <div class="circle circle-two"></div> -->
             </div>
-            <!-- <div class="circle circle-two"></div> -->
-        </div>
-        <div class="theme-btn-container"></div>
-    </section>
+            <div class="theme-btn-container"></div>
+        </section>
     </div>
 
 </main>

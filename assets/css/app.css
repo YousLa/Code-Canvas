@@ -234,12 +234,10 @@ h1 {
 
 .hidden-element {
     display: none;
-    
- } 
- 
-  .active-element
- {
+
+}
+
+.active-element {
     display: flex;
-   
- } 
- 
+
+}
