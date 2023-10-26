@@ -16,9 +16,10 @@ require_once 'views/templates/nav.php';
     <h1 class="titre">HTML</h1>
     <h1 class="titre">CSS</h1>
 
-    <img src="assets/img/spirohtml1.jpg" alt="">
-    <img src="assets/img/spirohtml2.jpg" alt="">
-
+    <div class="spirohtml">
+        <img class="image" src="assets/img/spirohtml1.svg" alt="">
+        <img class="image" src="assets/img/spirohtml2.svg" alt="">
+    </div>
     <!-- page css static -->
 
     <div class="container">
@@ -49,26 +50,6 @@ require_once 'views/templates/nav.php';
     <p src="cssText">CSS</p>
     <p src="jsText">JAVASCRIPT</p>
     <p src="phpText">PHP</p>
-
-
-
-    <!-- Formulaire d'inscription -->
-    <!-- <div class="registre hidden-element">
-
-        <h1>Registration Form</h1>
-
-        <form action="./controllers/session/signupController.php" method="POST">
-
-            <label for="pseudo">Pseudo</label>
-            <input type="text" name="pseudo" id="pseudo">
-
-            <label for="password">Password</label>
-            <input type="password" name="password" id="password">
-
-            <button type="submit" name="register">Register</button>
-        </form>
-
-    </div> -->
 
     <div class="registre hidden-element">
         <section class="container">

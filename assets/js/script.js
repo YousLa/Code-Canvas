@@ -10,6 +10,7 @@ let leBody = document.querySelector("body");
 let buttonSubmitRegistre = document.querySelector(".submitRegitre");
 let buttonRegister = document.querySelector("#registration");
 let madaRegister = document.querySelector(".registre");
+let spirohtmlImage =  document.querySelector(".spirohtml");
 let activeJs = false;
 /* le click sur le button html*/
 buttonHtml.addEventListener('click', resetCss)
@@ -45,6 +46,9 @@ function choiceSStyleStatique(event) {
     /*cacher les 2  buttons style1 et style2*/
     choicesStyle.classList.remove('active-element');
     choicesStyle.classList.add('hidden-element');
+    spirohtmlImage.classList.remove('active-element');
+    spirohtmlImage.classList.add('hidden-element');
+    
     leBody.classList.remove("style2");
     document.querySelector("body").classList.add("style1");
 }
@@ -59,6 +63,8 @@ document.querySelector(".formLogin").classList.add("withcss");
     /*cacher les 2  buttons style1 et style2*/
     choicesStyle.classList.remove('active-element');
     choicesStyle.classList.add('hidden-element');
+    spirohtmlImage.classList.remove('active-element');
+    spirohtmlImage.classList.add('hidden-element');
     leBody.classList.remove("style1");
     /*appliquer le style dynamique */
     document.querySelector("body").classList.add("style2");
