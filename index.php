@@ -44,11 +44,11 @@ require_once 'views/templates/nav.php';
     </div>
 
 
-     <!-- formulaire de login  -->
+    <!-- formulaire de login  -->
 
 
 
-     <section class="hidden-element container loginSection">
+    <section class="hidden-element container loginSection">
         <div class="login-container">
             <div class="circle circle-one"></div>
             <div class="form-container">
@@ -87,10 +87,20 @@ require_once 'views/templates/nav.php';
             CSS
         </button>
         <!-- Choix Style -->
-         <div class="choice_css hidden-element">
-            <button class="choiceStatique">style1</button>
-            <button class="choiceDynamique">style2</button>
-        </div> 
+        <div class="choice_css hidden-element">
+            <button class="choiceStatique">
+                <div>
+                    <h2>Statique</h2>
+                    <img src="assets/img/button/style1.png" alt="Style 1">
+                </div>
+            </button>
+            <button class="choiceDynamique">
+                <div>
+                    <h2>Dynamique</h2>
+                    <img src="assets/img/button/style1.png" alt="Style 2">
+                </div>
+            </button>
+        </div>
 
         <button class="jsButton language-button">
             JAVASCRIPT
