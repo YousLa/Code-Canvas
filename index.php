@@ -16,9 +16,10 @@ require_once 'views/templates/nav.php';
     <h1 class="titre">HTML</h1>
     <h1 class="titre">CSS</h1>
 
-    <img class="image" src="assets/img/spirohtml1.svg" alt="">
-    <img class="image" src="assets/img/spirohtml2.svg" alt="">
-
+    <div class="spirohtml">
+        <img class="image" src="assets/img/spirohtml1.svg" alt="">
+        <img class="image" src="assets/img/spirohtml2.svg" alt="">
+    </div>
     <!-- page css static -->
 
     <div class="container">
