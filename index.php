@@ -23,26 +23,6 @@ require_once 'views/templates/nav.php';
     <p src="jsText">JAVASCRIPT</p>
     <p src="phpText">PHP</p>
 
-
-
-    <!-- Formulaire d'inscription -->
-    <!-- <div class="registre hidden-element">
-
-        <h1>Registration Form</h1>
-
-        <form action="./controllers/session/signupController.php" method="POST">
-
-            <label for="pseudo">Pseudo</label>
-            <input type="text" name="pseudo" id="pseudo">
-
-            <label for="password">Password</label>
-            <input type="password" name="password" id="password">
-
-            <button type="submit" name="register">Register</button>
-        </form>
-
-    </div> -->
-
     <div class="registre hidden-element">
      <section class="container">
         <div class="login-container">
@@ -63,13 +43,6 @@ require_once 'views/templates/nav.php';
         <div class="theme-btn-container"></div>
     </section>
     </div>
-
-
-
-
- 
-
-
 
 
     <!-- formulaire de login  -->
