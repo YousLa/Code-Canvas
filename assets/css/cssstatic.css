@@ -1,9 +1,10 @@
 
-body{
-    background-color: rgb(250, 220, 169);
-}
 
-.forme1{
+
+.style1 {
+    background-color: bisque;
+}
+.style1 .forme1{
     width: 18em;
     height: 20em;
     border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
@@ -14,11 +15,11 @@ body{
     z-index: 1;
 }
 
-.forme1:hover {
+.style1 .forme1:hover {
     opacity: 1;
 }
 
-.forme2{
+.style1 .forme2{
     width: 17em;
     height: 18em;
     border-radius: 54% 46% 24% 76% / 79% 52% 48% 21%;
@@ -29,11 +30,11 @@ body{
     z-index: 2;
 }
 
-.forme2:hover {
+.style1 .forme2:hover {
     opacity: 0.5;
 }
 
-.forme3{
+.style1 .forme3{
     width: 17em;
     height: 15em;
     border-radius: 76% 24% 87% 13% / 79% 8% 92% 21% ;
@@ -45,13 +46,13 @@ body{
     z-index: 1;
 }
 
-.forme3:hover {
+.style1 .forme3:hover {
     border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
     background-color: rgba(55,92,164,0.58);
     box-shadow: 0px 0px 100px 0px rgba(245, 13, 253, 0.9);
 }
 
-.forme4{
+.style1 .forme4{
     width: 17em;
     height: 15em;
     border-radius: 10% 74% 47% 28% / 11% 63% 23% 74%;
@@ -63,11 +64,11 @@ body{
     z-index: 1;
 }
 
-.forme4:hover {
+.style1 .forme4:hover {
     opacity: 0.2;
 }
 
-.forme5{
+.style1 .forme5{
     width: 17em;
     height: 18em;
     border-radius: 30% 47% 33% 28% / 31% 40% 41% 53% ;
@@ -79,15 +80,15 @@ body{
     z-index: 1;
 }
 
-.forme5:hover {
+.style1 .forme5:hover {
     opacity: 0.2;
 }
 
-.forme5:hover .container{
+.style1 .forme5:hover .container{
     background-color: #1d8e48;
 }
 
-.forme6{
+.style1 .forme6{
     width: 17em;
     height: 18em;
     border-radius: 20% 80% 47% 53% / 0% 58% 42% 100% ;
@@ -99,13 +100,13 @@ body{
     z-index: 2;
 }
 
-.forme6:hover {
+.style1 .forme6:hover {
     opacity: 0.2;
     border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
     top: 8em; 
     left: 54em;
 }
-.forme7{
+.style1 .forme7{
     width: 17em;
     height: 18em;
     border-radius: 52% 48% 47% 53% / 50% 74% 26% 50%  ;
@@ -117,14 +118,14 @@ body{
     z-index: 1;
 }
 
-.forme7:hover {
+.style1 .forme7:hover {
     opacity: 0.8;
     border-radius: 76% 24% 87% 13% / 79% 8% 92% 21% ;
     top: 8em; 
     left: 65em;
 }
 
-.forme8{
+.style1 .forme8{
     width: 17em;
     height: 18em;
     border-radius: 61% 39% 70% 30% / 37% 83% 17% 63%;
@@ -136,14 +137,15 @@ body{
     z-index: 1;
 }
 
-.forme8:hover {
+.style1 .forme8:hover {
     background-color:rgba(244,231,54,0.59);
     border-radius: 61% 39% 70% 30% / 37% 83% 17% 63%;
     border-style: 2px solid;
     box-shadow: 0px 0px 100px 0px rgba(245, 13, 253, 0.762);
+    overflow: hidden;
 }
 
-.spirovert{
+.style1 .spirovert{
     width: 24%;
     position: absolute;
     top: 3em; 
@@ -151,7 +153,7 @@ body{
     z-index: 1;
 } 
 
-.spirovert:hover {
+.style1 .spirovert:hover {
     width: 10%;
     position: absolute;
     top: 3em; 
@@ -159,7 +161,8 @@ body{
     z-index: 1;
     transition: 4sec;
 }
-.spirojaune{
+
+.style1 .spirojaune{
     width: 8%;
     position: absolute;
     top: 9em; 
