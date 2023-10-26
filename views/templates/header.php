@@ -15,4 +15,4 @@
 
 <!-- Style 1  -->
 
-<body class="style1">
+<body class=""><!-- pas de class de base  -->

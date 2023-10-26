@@ -68,21 +68,43 @@ require_once 'views/templates/nav.php';
 
     </div>
 
-    <div class="login hidden-login">
-        <h1>LOG IN</h1>
 
-        <form action="./controllers/session/loginController.php" method="POST">
+     <!-- formulaire de login  -->
 
-            <label for="pseudo">Pseudo</label>
-            <input type="text" name="pseudo" id="pseudo">
 
-            <label for="password">Password</label>
-            <input type="password" name="password" id="password">
 
-            <button type="submit" name="login">Se connecter</button>
-        </form>
-    </div>
+     <section class="hidden-login container loginSection">
+        <div class="login-container">
+            <div class="circle circle-one"></div>
+            <div class="form-container">
 
+                <h1 class="opacity">LOGIN</h1>
+                <form action="./controllers/session/signupController.php" method="POST">
+
+                    <input type="text" name="pseudo" id="pseudo" placeholder="USERNAME" />
+                    <input type="password" name="password" id="password" placeholder="PASSWORD" />
+                    <button class="opacity">SUBMIT</button>
+                </form>
+
+
+                <div class="register-forget opacity">
+                    <a id="registration" href="">REGISTER</a>
+
+                </div>
+            </div>
+            <!-- <div class="circle circle-two"></div> -->
+        </div>
+        <div class="theme-btn-container"></div>
+    </section>
+
+
+
+
+
+
+
+
+    <
 
 </main>
 
@@ -98,10 +120,10 @@ require_once 'views/templates/nav.php';
             CSS
         </button>
         <!-- Choix Style -->
-        <!-- <div class="choice_css hidden-css">
+         <div class="choice_css hidden-css">
             <button>style1</button>
             <button>style2</button>
-        </div> -->
+        </div> 
 
         <button class="jsButton language-button">
             JAVASCRIPT
