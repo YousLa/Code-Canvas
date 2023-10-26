@@ -1,11 +1,15 @@
 let buttonHtml = document.querySelector(".htmlButton");
 let choicesStyle = document.querySelector(".choice_css");
 let buttonCss = document.querySelector(".cssButton");
+let buttonJs = document.querySelector(".jsButton");
 let buttonLogin = document.querySelector(".buttonLogin");
 let modalLogin = document.querySelector(".loginSection");
 let choiceStatique = document.querySelector(".choiceStatique");
 let choiceDynamique = document.querySelector(".choiceDynamique");
 let leBody = document.querySelector("body");
+let buttonSubmitRegistre = document.querySelector(".submitRegitre");
+let buttonRegister = document.querySelector("#registration");
+let activeJs = false;
 /* le click sur le button html*/
 buttonHtml.addEventListener('click', resetCss)
 function resetCss(event) {
@@ -35,6 +39,7 @@ choiceStatique.addEventListener('click', choiceSStyleStatique);
 function choiceSStyleStatique(event) {
     /*appliquer le style*/
     event.preventDefault();
+    document.querySelector(".formLogin").classList.add("withcss");
     /*cacher les 2  buttons style1 et style2*/
     choicesStyle.classList.remove('active-element');
     choicesStyle.classList.add('hidden-element');
@@ -47,7 +52,7 @@ choiceDynamique.addEventListener('click', choiceSStyleDynamique);
 
 function choiceSStyleDynamique(event) {
 
-
+document.querySelector(".formLogin").classList.add("withcss");
     event.preventDefault();
     /*cacher les 2  buttons style1 et style2*/
     choicesStyle.classList.remove('active-element');
@@ -55,36 +60,60 @@ function choiceSStyleDynamique(event) {
     leBody.classList.remove("style1");
     /*appliquer le style dynamique */
     document.querySelector("body").classList.add("style2");
+    displayThemeButtons();
 
 }
 
+/*gérer le click sur le button js : activer le button login*/
 
-
-buttonLogin.addEventListener('click', showloginModal);
-
-function showloginModal(event) {
-
+buttonJs.addEventListener('click', showJsChoix);
+function showJsChoix(event) {
+    activeJs = true;
     event.preventDefault();
+    /* faire disparaitre les choix css*/ 
+    
+    choicesStyle.classList.remove('active-element');
+    choicesStyle.classList.add('hidden-element');
 
-    modalLogin.classList.remove('hidden-element');
-    modalLogin.classList.add('active-element');
+    /*activer le button login*/
+  
+}
+buttonLogin.addEventListener('click', showloginModal);
+function showloginModal(event) {
+    event.preventDefault();
+    if(activeJs)
+    {
+        modalLogin.classList.remove('hidden-element');
+        modalLogin.classList.add('active-element');
+    }
+    else{
+        alert("Je ne peux pas afficher le formulaire de login, continue à chercher le langage qui te permettra de te loger");  
+    }
+   
+}
 
+/* gérer le click sur buttonSubmitRegistre*/
+
+buttonSubmitRegistre.addEventListener('click', dontRegister);
+function dontRegister(event) {
+    event.preventDefault();
+    alert("Je ne peux pas t'inscrire dans la base de données, continue à chercher le langage qui te permettra de créer ton compte.");
 }
 
 const themes = [
     {
         background: "#1A1A2E",
-        color: "#FFFFFF",
+        color: "#1A1A2E",
         primaryColor: "#0F3460"
     },
     {
         background: "#461220",
-        color: "#FFFFFF",
+        color: "#1A1A2E",
         primaryColor: "#E94560"
     },
     {
         background: "#192A51",
-        color: "#FFFFFF",
+        color: "#1A1A2E",
         primaryColor: "#967AA1"
     },
     {
@@ -99,7 +128,7 @@ const themes = [
     },
     {
         background: "#231F20",
-        color: "#FFF",
+        color: "#1A1A2E",
         primaryColor: "#BB4430"
     }
 ];
@@ -123,5 +152,5 @@ const displayThemeButtons = () => {
     });
 };
 
-displayThemeButtons();
+
 
