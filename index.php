@@ -47,30 +47,30 @@ require_once 'views/templates/nav.php';
     <!-- formulaire de login  -->
 
 
-<div class="formLogin">
-     <section class="hidden-element container loginSection">
-        <div class="login-container">
-            <div class="circle circle-one"></div>
-            <div class="form-container">
+    <div class="formLogin">
+        <section class="hidden-element container loginSection">
+            <div class="login-container">
+                <div class="circle circle-one"></div>
+                <div class="form-container">
 
-                <h1 class="opacity">LOGIN</h1>
-                <form action="./controllers/session/signupController.php" method="POST">
+                    <h1 class="opacity">LOGIN</h1>
+                    <form action="./controllers/session/signupController.php" method="POST">
 
-                    <input type="text" name="pseudo" id="pseudo" placeholder="USERNAME" />
-                    <input type="password" name="password" id="password" placeholder="PASSWORD" />
-                    <button class="submitRegitre opacity">SUBMIT</button>
-                </form>
+                        <input type="text" name="pseudo" id="pseudo" placeholder="USERNAME" />
+                        <input type="password" name="password" id="password" placeholder="PASSWORD" />
+                        <button class="submitRegitre opacity">SUBMIT</button>
+                    </form>
 
 
-                <div class="register-forget opacity">
-                    <a  id="registration" href="">REGISTER</a>
+                    <div class="register-forget opacity">
+                        <a id="registration" href="">REGISTER</a>
 
+                    </div>
                 </div>
+                <!-- <div class="circle circle-two"></div> -->
             </div>
-            <!-- <div class="circle circle-two"></div> -->
-        </div>
-        <div class="theme-btn-container"></div>
-    </section>
+            <div class="theme-btn-container"></div>
+        </section>
     </div>
 
 </main>
