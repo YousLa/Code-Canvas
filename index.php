@@ -11,7 +11,7 @@ require_once 'views/templates/nav.php';
 <!-- HTML -->
 
 <div class="style1">
-
+<button class="buttonLogin">login</button>
     <h1 class="titre">HTML</h1>
 
     <img class="image" src="" alt="">
@@ -50,6 +50,9 @@ require_once 'views/templates/nav.php';
     </div>
 
     <!-- Formulaire d'inscription -->
+
+
+
     <div class="registre hidden-registration">
 
         <h1>Registration Form</h1>
@@ -66,6 +69,42 @@ require_once 'views/templates/nav.php';
         </form>
 
     </div>
+
+
+    <!-- formulaire de login  -->
+
+
+
+    <section class="hidden-login container loginSection">
+        <div class="login-container">
+            <div class="circle circle-one"></div>
+            <div class="form-container">
+
+                <h1 class="opacity">LOGIN</h1>
+                <form action="./controllers/session/signupController.php" method="POST">
+                 
+                    <input type="text" name="pseudo" id="pseudo" placeholder="USERNAME" />
+                    <input type="password" name="password" id="password" placeholder="PASSWORD" />
+                    <button class="opacity">SUBMIT</button>
+                </form>
+
+            
+                <div class="register-forget opacity">
+                    <a id="registration" href="">REGISTER</a>
+                  
+                </div>
+            </div>
+            <!-- <div class="circle circle-two"></div> -->
+        </div>
+        <div class="theme-btn-container"></div>
+    </section>
+    
+ 
+
+
+
+
+
 
     <div class="login hidden-login">
         <h1>LOG IN</h1>
