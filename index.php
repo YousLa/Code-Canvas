@@ -16,8 +16,6 @@ require_once 'views/templates/nav.php';
     <h1 class="titre">HTML</h1>
     <h1 class="titre">CSS</h1>
 
-    <img class="image" src="assets/img/spirohtml.svg" alt="">
-
     <!-- page css static -->
 
     <div class="container">
@@ -81,7 +79,7 @@ require_once 'views/templates/nav.php';
                         <input type="text" name="pseudo" id="pseudo" />
                         <label for="password">Password</label>
                         <input type="password" name="password" id="password" placeholder="PASSWORD" />
-                        <button class="submitRegitre opacity">Register</button>
+                        <button class="submitRegitre opacity">S'inscrire</button>
                     </form>
                 </div>
                 <!-- <div class="circle circle-two"></div> -->
@@ -112,12 +110,12 @@ require_once 'views/templates/nav.php';
 
                         <input type="text" name="pseudo" id="pseudo" placeholder="USERNAME" />
                         <input type="password" name="password" id="password" placeholder="PASSWORD" />
-                        <button class="submitRegitre opacity">SUBMIT</button>
+                        <button class="submitRegitre opacity">Connexion</button>
                     </form>
 
 
-                    <div class="register-forget opacity">
-                        <a id="registration" href="">REGISTER</a>
+                    <div class="register-forget opacity">Pas encore inscrit ?
+                        <a id="registration" href="">S'inscrire.</a>
 
                     </div>
                 </div>
