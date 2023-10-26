@@ -12,12 +12,12 @@ require_once 'views/templates/nav.php';
 
 <main>
 
-    <button class="buttonLogin">login</button>
     <h1 class="titre">HTML</h1>
 
     <img class="image" src="assets/img/spirohtml.svg" alt="">
 
     <p src="htmlText">HTML</p>
+    <p>Salut, je suis HTML (Hypertext Markup Language) et je suis le langage de base d'une page web. Je m'occupe de la structure. Imagine-moi comme l'architecte qui dessine les plans pour une maison. Je dis où mettre les images, le texte et les liens. En gros, je construis la base solide de la page. Mon importance est primordial mais j'avoue que je suis un peu moche quand j'agis tout seul !</p>
     <p src="cssText">CSS</p>
     <p src="jsText">JAVASCRIPT</p>
     <p src="phpText">PHP</p>
