@@ -90,7 +90,7 @@ require_once 'views/templates/nav.php';
                 <div class="form-container">
 
                     <h1 class="opacity">LOGIN</h1>
-                    <form action="./controllers/session/signupController.php" method="POST">
+                    <form action="./controllers/session/loginController.php" method="POST">
 
                         <input type="text" name="pseudo" id="pseudo" placeholder="USERNAME" />
                         <input type="password" name="password" id="password" placeholder="PASSWORD" />
@@ -124,17 +124,11 @@ require_once 'views/templates/nav.php';
         </button>
         <!-- Choix Style -->
         <div class="choice_css hidden-element">
-            <button class="choiceStatique">
-                <div>
-                    <h2>Statique</h2>
-                    <img src="assets/img/button/style1.png" alt="Style 1">
-                </div>
+            <button class="choiceStatique language-button">
+                <h2>Statique</h2>
             </button>
-            <button class="choiceDynamique">
-                <div>
-                    <h2>Dynamique</h2>
-                    <img src="assets/img/button/style1.png" alt="Style 2">
-                </div>
+            <button class="choiceDynamique language-button">
+                Dynamique
             </button>
         </div>
 

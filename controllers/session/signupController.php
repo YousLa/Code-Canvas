@@ -4,7 +4,7 @@
 # Lancement de la session
 session_start();
 
-if (isset($_POST['register'], $_POST['pseudo'], $_POST['password']) && !empty($_POST['pseudo']) && !empty($_POST['password'])) {
+if (isset($_POST['pseudo'], $_POST['password']) && !empty($_POST['pseudo']) && !empty($_POST['password'])) {
 
     $pseudo = htmlspecialchars(trim($_POST['pseudo']));
     $password = htmlspecialchars(trim($_POST['password']));

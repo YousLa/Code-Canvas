@@ -10,7 +10,7 @@ let leBody = document.querySelector("body");
 let buttonSubmitRegistre = document.querySelector(".submitRegitre");
 let buttonRegister = document.querySelector("#registration");
 let madaRegister = document.querySelector(".registre");
-let spirohtmlImage =  document.querySelector(".spirohtml");
+let spirohtmlImage = document.querySelector(".spirohtml");
 let activeJs = false;
 /* le click sur le button html*/
 buttonHtml.addEventListener('click', resetCss)
@@ -48,7 +48,7 @@ function choiceSStyleStatique(event) {
     choicesStyle.classList.add('hidden-element');
     spirohtmlImage.classList.remove('active-element');
     spirohtmlImage.classList.add('hidden-element');
-    
+
     leBody.classList.remove("style2");
     document.querySelector("body").classList.add("style1");
 }
@@ -58,7 +58,7 @@ choiceDynamique.addEventListener('click', choiceSStyleDynamique);
 
 function choiceSStyleDynamique(event) {
 
-document.querySelector(".formLogin").classList.add("withcss");
+    document.querySelector(".formLogin").classList.add("withcss");
     event.preventDefault();
     /*cacher les 2  buttons style1 et style2*/
     choicesStyle.classList.remove('active-element');
@@ -78,40 +78,39 @@ buttonJs.addEventListener('click', showJsChoix);
 function showJsChoix(event) {
     activeJs = true;
     event.preventDefault();
-    /* faire disparaitre les choix css*/ 
-    
+    /* faire disparaitre les choix css*/
+
     choicesStyle.classList.remove('active-element');
     choicesStyle.classList.add('hidden-element');
 
     /*activer le button login*/
-  
+
 }
 buttonLogin.addEventListener('click', showloginModal);
 function showloginModal(event) {
     event.preventDefault();
-    if(activeJs)
-    {
+    if (activeJs) {
         modalLogin.classList.remove('hidden-element');
         modalLogin.classList.add('active-element');
     }
-    else{
-        alert("Je ne peux pas afficher le formulaire de login, continue à chercher le langage qui te permettra de te loger");  
+    else {
+        alert("Je ne peux pas afficher le formulaire de login, continue à chercher le langage qui te permettra de te loger");
     }
-   
+
 }
 
 /* gérer le click sur buttonSubmitlogin*/
 
 buttonSubmitRegistre.addEventListener('click', dontRegister);
 function dontRegister(event) {
-    event.preventDefault();
-    alert("Je ne peux pas t'inscrire dans la base de données, continue à chercher le langage qui te permettra de créer ton compte.");
+    //event.preventDefault();
+    //  alert("Je ne peux pas t'inscrire dans la base de données, continue à chercher le langage qui te permettra de créer ton compte.");
 }
 
 
 /*gérer le click sur le bouton register*/
 
-buttonRegister.addEventListener('click',showModalRegister);
+buttonRegister.addEventListener('click', showModalRegister);
 function showModalRegister(event) {
     event.preventDefault();
 
