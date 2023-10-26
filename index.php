@@ -26,7 +26,7 @@ require_once 'views/templates/nav.php';
 
 
     <!-- Formulaire d'inscription -->
-    <div class="registre hidden-element">
+    <!-- <div class="registre hidden-element">
 
         <h1>Registration Form</h1>
 
@@ -41,14 +41,42 @@ require_once 'views/templates/nav.php';
             <button type="submit" name="register">Register</button>
         </form>
 
+    </div> -->
+
+    <div class="registre hidden-element">
+     <section class="container">
+        <div class="login-container">
+            <div class="circle circle-one"></div>
+            <div class="form-container">
+
+                <h1 class="opacity">Inscription</h1>
+                <form action="./controllers/session/signupController.php" method="POST">
+                    <label for="pseudo">Pseudo</label>
+                    <input type="text" name="pseudo" id="pseudo" />
+                    <label for="password">Password</label>
+                    <input type="password" name="password" id="password" placeholder="PASSWORD" />
+                    <button class="submitRegitre opacity">Register</button>
+                </form>
+            </div>
+            <!-- <div class="circle circle-two"></div> -->
+        </div>
+        <div class="theme-btn-container"></div>
+    </section>
     </div>
+
+
+
+
+ 
+
+
 
 
     <!-- formulaire de login  -->
 
 
-<div class="formLogin">
-     <section class="hidden-element container loginSection">
+<div class="formLogin hidden-element">
+     <section class="container loginSection">
         <div class="login-container">
             <div class="circle circle-one"></div>
             <div class="form-container">
