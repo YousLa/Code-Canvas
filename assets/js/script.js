@@ -42,6 +42,7 @@ function choiceSStyleStatique(event) {
     /*appliquer le style*/
     event.preventDefault();
     document.querySelector(".formLogin").classList.add("withcss");
+   
     madaRegister.classList.add("withcss");
     /*cacher les 2  buttons style1 et style2*/
     choicesStyle.classList.remove('active-element');
@@ -104,8 +105,8 @@ function showloginModal(event) {
 
 buttonSubmitRegistre.addEventListener('click', dontRegister);
 function dontRegister(event) {
-    event.preventDefault();
-    alert("Je ne peux pas t'inscrire dans la base de données, continue à chercher le langage qui te permettra de créer ton compte.");
+   // event.preventDefault();
+   // alert("Je ne peux pas t'inscrire dans la base de données, continue à chercher le langage qui te permettra de créer ton compte.");
 }
 
 
@@ -121,6 +122,30 @@ function showModalRegister(event) {
     madaRegister.classList.remove('hidden-element');
     madaRegister.classList.add('active-element');
 }
+
+
+/*gérer le click sur enregistrer*/
+
+document.querySelector('.boutonEnregistrer').addEventListener('click', function() {
+    // Récupérez la classe actuelle du body.
+    const classeBody = document.body.classList[0]; // recuperer la classe de body
+
+    // Envoyez la classe au serveur pour enregistrement.
+    fetch('enregistrerLikeController.php', {
+        method: 'POST',
+        body: JSON.stringify({ classe: classeBody }),
+        headers: {
+            'Content-Type': 'application/json'
+        }
+    }).then(response => {
+        if (response.ok) {
+            // Redirection vers une page de confirmation ou autre.
+            console.log("tous ok");
+        } else {
+            // Gérer les erreurs, peut-être afficher un message à l'utilisateur.
+        }
+    });
+});
 
 
 const themes = [

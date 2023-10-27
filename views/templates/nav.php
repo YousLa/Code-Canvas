@@ -13,6 +13,7 @@
                 <!-- Si la varibale session n'existe pas on affiche le bouton de connexion -->
             <?php else : ?>
                 <li><button class="buttonLogin language-button"><a href="controllers/session/loginController.php">Login</a></button></li>
+                <li><button class="boutonEnregistrer language-button"><a href="controllers/session/likeController.php">Enregistrer</a></button></li>
             <?php endif; ?>
         </ul>
     </nav>
