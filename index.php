@@ -42,6 +42,11 @@ require_once 'views/templates/nav.php';
         <div class="forme9"></div>
     </div>
 
+    <!-- page js -->
+    <container class="js_animation">
+    </container>    
+
+
 
     <!-- Textes -->
 
