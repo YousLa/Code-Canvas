@@ -20,7 +20,7 @@ require_once 'views/templates/nav.php';
                 <br>Un chouette challenge de travail de groupe et de mise en pratique.</p>
                 <p class='texte'>Yousra (WEB 23), Hanane, Elena et Laurence (WAD23).</p>
                 
-                <a href="index.php"><button class="comic-button">
+                <a href="index.php"><button class='language-button retour'>
                     retour
                 </button></a>
                 

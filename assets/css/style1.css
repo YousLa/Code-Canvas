@@ -300,6 +300,32 @@
     width: 10rem;
 }
 
+/* ^ ============== Bouton Enregistrer ============== */
+
+.style1 button.boutonEnregistrer,
+.style2 button.boutonEnregistrer {
+    /* Background des boutons de base */
+    background: #f24ce4;
+    /* border */
+    border: 2px solid #e779f3;
+}
+
+.style1 .boutonEnregistrer:hover,
+.style2 .boutonEnregistrer:hover {
+    /* Couleur back ground hover */
+    background: #c330d0;
+}
+
+.style1 button.boutonEnregistrer::before,
+.style2 button.boutonEnregistrer::before {
+    background: #d230da;
+}
+
+.style1 button.boutonEnregistrer,
+.style2 button.boutonEnregistrer {
+    width: fit-content;
+}
+
 
 
 /* #region static */
@@ -513,31 +539,21 @@
     line-height: 1.5em;
 }
 
-.comic-button {
-    display: inline-block;
-    padding: 10px 20px;
-    font-size: 24px;
-    font-weight: bold;
-    text-align: center;
-    text-decoration: none;
-    color: #fff;
-    background-color: #02aa05;
-    border-radius: 10px;
-    border: 2px solid #012701;
-    box-shadow: 5px 5px 0px #012701;
-    transition: all 0.3s ease;
-    margin-top: 2em;
+/* bouton retour page about */
+
+.style1 button.retour {
+    /* Background des boutons de base */
+    background: #3e76ef;
+    /* border */
+    border: 2px solid #85a7ef;
+    width: fit-content;
 }
 
-.comic-button:hover {
-    background-color: #67f06a;
-    color: #012701;
-    border: 2px solid #012701;
-    box-shadow: 5px 5px 0px #012701;
+.style1 .retour:hover {
+    /* Couleur background hover */
+    background: #1f62f0;
 }
 
-.comic-button:active {
-    background-color: #1494fc;
-    box-shadow: none;
-    transform: translateY(4px);
+.style1 button.retour::before {
+    background: #315dbb;
 }
