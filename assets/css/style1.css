@@ -282,6 +282,7 @@
     background: #c24d22;
     /* border */
     border: 2px solid #9e3f1c;
+    font-size: 1rem;
 }
 
 .style1 .buttonLogin:hover,
@@ -297,7 +298,7 @@
 
 .style1 button.buttonLogin,
 .style2 button.buttonLogin {
-    width: 10rem;
+    width: fit-content;
 }
 
 /* ^ ============== Bouton Enregistrer ============== */
@@ -308,6 +309,7 @@
     background: #f24ce4;
     /* border */
     border: 2px solid #e779f3;
+    font-size: 1rem;
 }
 
 .style1 .boutonEnregistrer:hover,
@@ -547,6 +549,7 @@
     /* border */
     border: 2px solid #85a7ef;
     width: fit-content;
+    font-size: 1rem;
 }
 
 .style1 .retour:hover {
