@@ -560,3 +560,18 @@
 .style1 button.retour::before {
     background: #315dbb;
 }
+
+
+#closeL, #closeR {
+    width: 1.5rem;
+    display: flex;
+    justify-content: right;
+    margin-bottom: 3rem;
+    cursor: pointer;
+}
+
+#closeL img,
+#closeR img {
+    width: 100%;
+    height: fit-content;
+}

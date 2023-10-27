@@ -81,6 +81,7 @@ require_once 'views/templates/nav.php';
             <div class="login-container">
                 <div class="circle circle-one"></div>
                 <div class="form-container">
+                    <img id="closeR" src = "./assets/img/close.svg" ></img>
 
                     <h1 class="opacity">Inscription</h1>
                     <form action="./controllers/session/signupController.php" method="POST">
@@ -113,7 +114,7 @@ require_once 'views/templates/nav.php';
             <div class="login-container">
                 <div class="circle circle-one"></div>
                 <div class="form-container">
-
+                <img id="closeL" src = "./assets/img/close.svg" ></img>
                     <h1 class="opacity">LOGIN</h1>
                     <form action="./controllers/session/loginController.php" method="POST">
 
