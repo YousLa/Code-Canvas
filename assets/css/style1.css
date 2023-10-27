@@ -313,9 +313,9 @@
 /* ! CONTAINER MASTER CARDS */
 .style1 .cards-language-container,
 .style2 .cards-language-container {
+    height: 18rem;
     display: flex;
     flex-direction: row;
-    align-items: center;
     justify-content: center;
     margin: 0 auto;
     width: 80%;
@@ -325,15 +325,39 @@
 
 .style1 .card-container,
 .style2 .card-container {
+    border: solid 1px red;
+    width: 20rem;
+    height: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
-    width: 20rem;
+    justify-content: space-between;
+
     position: relative;
-    display: inline-block;
     font-family: inherit;
     font-size: 1rem;
+}
+
+.style1 .card-content,
+.style2 .card-content {
+    width: 100%;
+    height: 100%;
+    margin: 1rem;
+}
+
+.style1 .card-container h2,
+.style2 .card-container h2 {
+    width: 100%;
+    font-family: "nimbusmono-bold";
+    font-size: large;
+    margin: 0.25rem auto;
+    text-align: center;
+}
+
+.style1 .card-container p,
+.style2 .card-container p {
+    width: 100%;
+    text-align: left;
 }
 
 /* #endregion */
