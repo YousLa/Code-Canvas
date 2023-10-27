@@ -5,7 +5,7 @@
 
     <nav>
         <ul>
-            <li><a href="#"><img class="info" src="assets/img/icons/question-mark-question-svgrepo-com.svg" alt=""></a></li>
+            <li><a href="about.php"><img class="info" src="assets/img/icons/question-mark-question-svgrepo-com.svg" alt=""></a></li>
 
             <!-- Si la variable session existe c'est que l'utilisateur est connecté et on affiche le bouton de déconnexion -->
             <?php if (isset($_SESSION['id'])) : ?>
