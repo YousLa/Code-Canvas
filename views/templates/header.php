@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -16,6 +17,8 @@
 
 </head>
 
-<!-- Style 1  -->
-
-<body><!-- pas de class de base  -->
+<!-- 
+<body <?php if (isset($_SESSION['id'])) : ?> class="style2" <?php endif; ?>> -->
+    <body <?php if (isset($_SESSION['id'])) { echo 'class="' . $_SESSION['style'] . '"'; } ?>>
+    <!-- Contenu de votre page ici 
+</html>
