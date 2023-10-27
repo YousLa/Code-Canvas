@@ -35,12 +35,22 @@ function choiceStyle(event) {
 
 }
 
+// Function to update the chosen style 
+function updateSelectedStyle(style) {
+    // Send an AJAX request to update the user's selected style in the database
+    const xhr = new XMLHttpRequest();
+    xhr.open('POST', 'update_style.php', true);
+    xhr.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded; charset=UTF-8');
+    xhr.send(`style=${style}`);
+}
+
 /* Appliquer le style statique sur la page si l'utilisateur choisi le premier style*/
 choiceStatique.addEventListener('click', choiceSStyleStatique);
 
 function choiceSStyleStatique(event) {
     /*appliquer le style*/
     event.preventDefault();
+    updateSelectedStyle('style1');
     document.querySelector(".formLogin").classList.add("withcss");
     madaRegister.classList.add("withcss");
     /*cacher les 2  buttons style1 et style2*/
@@ -58,8 +68,10 @@ choiceDynamique.addEventListener('click', choiceSStyleDynamique);
 
 function choiceSStyleDynamique(event) {
 
-    document.querySelector(".formLogin").classList.add("withcss");
     event.preventDefault();
+    updateSelectedStyle('style2');
+    document.querySelector(".formLogin").classList.add("withcss");
+
     /*cacher les 2  buttons style1 et style2*/
     choicesStyle.classList.remove('active-element');
     choicesStyle.classList.add('hidden-element');
