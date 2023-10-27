@@ -282,6 +282,7 @@
     background: #c24d22;
     /* border */
     border: 2px solid #9e3f1c;
+    font-size: 1rem;
 }
 
 .style1 .buttonLogin:hover,
@@ -297,9 +298,125 @@
 
 .style1 button.buttonLogin,
 .style2 button.buttonLogin {
-    width: 10rem;
+    width: fit-content;
 }
 
+/* ^ ============== Bouton Enregistrer ============== */
+
+.style1 button.boutonEnregistrer,
+.style2 button.boutonEnregistrer {
+    /* Background des boutons de base */
+    background: #f24ce4;
+    /* border */
+    border: 2px solid #e779f3;
+    font-size: 1rem;
+}
+
+.style1 .boutonEnregistrer:hover,
+.style2 .boutonEnregistrer:hover {
+    /* Couleur back ground hover */
+    background: #c330d0;
+}
+
+.style1 button.boutonEnregistrer::before,
+.style2 button.boutonEnregistrer::before {
+    background: #d230da;
+}
+
+.style1 button.boutonEnregistrer,
+.style2 button.boutonEnregistrer {
+    width: fit-content;
+}
+
+
+/* #region cards */
+
+.style1 .over-button,
+.style2 .over-button {
+    width: 100%;
+    position: absolute;
+    bottom: 8rem;
+}
+
+/* ! CONTAINER MASTER CARDS */
+.style1 .cards-language-container,
+.style2 .cards-language-container {
+    width: 100%;
+    height: 18rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 0 auto;
+    width: 80%;
+    box-sizing: border-box;
+    gap: 2rem;
+}
+
+.style1 .card-container,
+.style2 .card-container {
+    border-radius: 0.25rem;
+    width: 20rem;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.25rem;
+
+    position: relative;
+    font-family: inherit;
+
+    font-size: 1rem;
+}
+
+.style1 .html,
+.style2 .html {
+    background-color: #c677b021;
+    border: 2px solid #c660a931;
+}
+
+.style1 .css,
+.style2 .css {
+    background-color: #1d8e4825;
+    border: 2px solid #156a362f;
+}
+
+.style1 .js,
+.style2 .js {
+    background-color: #375ba438;
+    border: 2px solid #244fa546;
+}
+
+.style1 .php,
+.style2 .php {
+    background-color: #c5ba1b25;
+    border: 2px solid rgba(234, 220, 19, 0.13);
+}
+
+.style1 .card-content,
+.style2 .card-content {
+    width: 100%;
+    height: 100%;
+}
+
+.style1 .card-container h2,
+.style2 .card-container h2 {
+    width: 100%;
+    font-family: "nimbusmono-bold";
+    font-size: large;
+    margin: 0.25rem auto;
+    text-align: center;
+    margin-bottom: 0.25rem;
+}
+
+.style1 .card-container p,
+.style2 .card-container p {
+
+    width: 100%;
+    text-align: left;
+}
+
+/* #endregion */
 
 
 /* #region static */
@@ -498,3 +615,39 @@
 }
 
 /* #endregion*/
+
+/* #region style page about */
+
+.about {
+    width: 40%;
+    margin-top: 5%;
+    margin-left: 30%;
+    margin-right: 30%;
+}
+
+.texte {
+    margin: 1em;
+    line-height: 1.5em;
+}
+
+/* bouton retour page about */
+
+.style1 button.retour {
+    /* Background des boutons de base */
+    background: #3e76ef;
+    /* border */
+    border: 2px solid #85a7ef;
+    width: fit-content;
+    font-size: 1rem;
+}
+
+.style1 .retour:hover {
+    /* Couleur background hover */
+    background: #1f62f0;
+}
+
+.style1 button.retour::before {
+    background: #315dbb;
+}
+
+/* #endregion */

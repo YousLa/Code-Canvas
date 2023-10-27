@@ -62,6 +62,7 @@ function choiceSStyleStatique(event) {
     event.preventDefault();
     document.querySelector(".formLogin").classList.add("withcss");
 
+
     madaRegister.classList.add("withcss");
     /*cacher les 2  buttons style1 et style2*/
     choicesStyle.classList.remove('active-element');
@@ -97,7 +98,7 @@ function choiceSStyleDynamique(event) {
     containeranimation.classList.remove('hidden-element');
     /*changer les images png en svg*/
     document.querySelector(".imgSpiro1").setAttribute("src", "./assets/img/spirovertAn.svg");
-    document.querySelector(".imgSpiro2").setAttribute("src", "./assets/img/spiroorangeAn.svg");
+    document.querySelector(".imgSpiro2").setAttribute("src", "./assets/img/spirorangeAn.svg");
     document.querySelector(".imgSpiro3").setAttribute("src", "./assets/img/spirobleuAn.svg");
     document.querySelector(".imgSpiro4").setAttribute("src", "./assets/img/spiroroseAn.svg");
     document.querySelector(".formLogin").classList.add("withcss");
