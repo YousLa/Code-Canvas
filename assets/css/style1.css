@@ -465,3 +465,46 @@
 }
 
 /* #endregion*/
+
+/* style page about */
+
+.about {
+    width: 40%;
+    margin-top: 5%;
+    margin-left: 30%;
+    margin-right: 30%;
+}
+
+.texte {
+    margin: 1em;
+    line-height: 1.5em;
+}
+
+.comic-button {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    color: #fff;
+    background-color: #02aa05;
+    border-radius: 10px;
+    border: 2px solid #012701;
+    box-shadow: 5px 5px 0px #012701;
+    transition: all 0.3s ease;
+    margin-top: 2em;
+}
+
+.comic-button:hover {
+    background-color: #67f06a;
+    color: #012701;
+    border: 2px solid #012701;
+    box-shadow: 5px 5px 0px #012701;
+}
+
+.comic-button:active {
+    background-color: #1494fc;
+    box-shadow: none;
+    transform: translateY(4px);
+}
