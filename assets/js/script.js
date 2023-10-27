@@ -226,5 +226,23 @@ const displayThemeButtons = () => {
     });
 };
 
+// * Récupération du bouton
+const CLOSER = document.querySelector('#closeR');
+
+// * Récupération du bouton
+const CLOSEL = document.querySelector('#closeL');
+
+// ~ Ajout de l'évènement de fermeture du modal sur mon bouton close
+CLOSER.addEventListener('click', () => {
+
+    madaRegister.classList.add('hidden-element');
+    madaRegister.classList.remove('active-element');
+});
+// ~ Ajout de l'évènement de fermeture du modal sur mon bouton close
+CLOSEL.addEventListener('click', () => {
+
+    modalLogin.classList.add('hidden-element');
+    modalLogin.classList.remove('active-element');
+});
 
 
