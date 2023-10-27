@@ -12,6 +12,7 @@ let buttonRegister = document.querySelector("#registration");
 let madaRegister = document.querySelector(".registre");
 let spirohtmlImage = document.querySelector(".spirohtml");
 let activeJs = false;
+let containeranimation = document.querySelector(".container-animation");
 /* le click sur le button html*/
 buttonHtml.addEventListener('click', resetCss)
 function resetCss(event) {
@@ -51,13 +52,19 @@ function choiceSStyleStatique(event) {
 
     leBody.classList.remove("style2");
     document.querySelector("body").classList.add("style1");
+    /*enlever le css animation*/
+    containeranimation.classList.remove('active-element');
+    containeranimation.classList.add('hidden-element');
 }
 
 /* Appliquer le style dynamique sur la page si l'utilisateur choisi le deuxieme style*/
 choiceDynamique.addEventListener('click', choiceSStyleDynamique);
 
 function choiceSStyleDynamique(event) {
-
+    event.preventDefault();
+    //ajouter les animation css
+    containeranimation.classList.add('active-element');
+    containeranimation.classList.remove('hidden-element');
     /*changer les images png en svg*/
     document.querySelector(".imgSpiro1").setAttribute("src", "./assets/img/spirovertAn.svg");
     document.querySelector(".imgSpiro2").setAttribute("src", "./assets/img/spiroorangeAn.svg");
@@ -67,7 +74,7 @@ function choiceSStyleDynamique(event) {
 
 
     document.querySelector(".formLogin").classList.add("withcss");
-    event.preventDefault();
+
     /*cacher les 2  buttons style1 et style2*/
     choicesStyle.classList.remove('active-element');
     choicesStyle.classList.add('hidden-element');
@@ -77,6 +84,7 @@ function choiceSStyleDynamique(event) {
     /*appliquer le style dynamique */
     document.querySelector("body").classList.add("style2");
     displayThemeButtons();
+
 
 }
 
