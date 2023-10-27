@@ -12,9 +12,6 @@ require_once 'views/templates/nav.php';
 
 <main>
 
-
-
-
     <div class="spirohtml">
         <img class="image" src="assets/img/spirohtml1.jpg" alt="">
         <img class="image" src="assets/img/spirohtml2.jpg" alt="">
@@ -22,7 +19,6 @@ require_once 'views/templates/nav.php';
     <!-- page css static -->
 
     <div class="container">
-
         <div class="forme1"></div>
         <div class="forme2"></div>
         <div class="forme3"></div>
@@ -44,37 +40,44 @@ require_once 'views/templates/nav.php';
     <!-- page js -->
     <div class="js_animation hidden-element"> </div>
 
+    <!-- DIV master -->
+    <div class="over-button">
+        <!-- // ! Div qui contient toutes les cards -->
+        <div class="cards-language-container">
 
-    <div>
+            <!-- // * Div container HTML -->
+            <div class="card-container html">
+                <h1 class="titre">HTML</h1>
+                <p>Salut, je suis HTML (Hypertext Markup Language) et je suis le langage de base d'une page web. Je m'occupe de la structure. Imagine-moi comme l'architecte qui dessine les plans pour une maison. Je dis où mettre les images, le texte et les liens. En gros, je construis la base solide de la page. Mon importance est primordial mais j'avoue que je suis un peu moche quand j'agis tout seul !</p>
 
+            </div>
+            <!-- // * Div container CSS -->
+            <div class="card-container css">
+                <h1 class="titre">CSS</h1>
+                <p>
+                    Coucou, je suis CSS (Cascading Style Sheets), le designer de la page web. Mon travail consiste à la rendre jolie. Je choisis les couleurs, les polices de caractères et la mise en page. Je m'assure que tout ait l'air attrayant. On peut dire que je suis comme le décorateur d'intérieur du site web. Je suis même capable de créer des petites animations.
+                </p>
+            </div>
+
+            <!-- // * Div container JS -->
+            <div class="card-container js">
+                <h1 class="titre">JAVASCRIPT</h1>
+                <p>
+                    Salut, je suis JavaScript, le magicien des pages web. Ma mission, c'est de rendre les pages interactives. Je peux créer des animations, comme faire apparaître des phrases de gauche et les faire disparaître à droite, ou faire apparaître et disparaître des éléments au clic. Je peux aussi concevoir des jeux, et même des formulaires où vous pouvez saisir des informations. Je suis un peu comme l'animateur de la fête !
+                </p>
+            </div>
+
+            <!-- // * Div container PHP -->
+            <div class="card-container php">
+                <h1 class="titre">PHP</h1>
+                <p>
+                    Mesdames et messieurs, je suis PHP, le chef en coulisses du site web. Je m'occupe de tout ce qui se passe en arrière-plan. Je gère le formulaire, je communique avec une base de données et je garantis que vous puissiez sauvegarder votre version préférée de ce site. Vous ne me voyez pas souvent, c'est vrai, mais je m'assure que tout fonctionne correctement.
+                </p>
+            </div>
+        </div>
     </div>
-    <!-- Textes -->
-    <h1 class="titre">HTML</h1>
-    <div class="text-container">
-        <p>Salut, je suis HTML (Hypertext Markup Language) et je suis le langage de base d'une page web. Je m'occupe de la structure. Imagine-moi comme l'architecte qui dessine les plans pour une maison. Je dis où mettre les images, le texte et les liens. En gros, je construis la base solide de la page. Mon importance est primordial mais j'avoue que je suis un peu moche quand j'agis tout seul !</p>
 
-    </div>
 
-    <h1 class="titre">CSS</h1>
-    <div class="text">
-        <p>
-            Coucou, je suis CSS (Cascading Style Sheets), le designer de la page web. Mon travail consiste à la rendre jolie. Je choisis les couleurs, les polices de caractères et la mise en page. Je m'assure que tout ait l'air attrayant. On peut dire que je suis comme le décorateur d'intérieur du site web. Je suis même capable de créer des petites animations.
-        </p>
-    </div>
-
-    <h1 class="titre">JAVASCRIPT</h1>
-    <div class="text">
-        <p>
-            Salut, je suis JavaScript, le magicien des pages web. Ma mission, c'est de rendre les pages interactives. Je peux créer des animations, comme faire apparaître des phrases de gauche et les faire disparaître à droite, ou faire apparaître et disparaître des éléments au clic. Je peux aussi concevoir des jeux, et même des formulaires où vous pouvez saisir des informations. Je suis un peu comme l'animateur de la fête !
-        </p>
-    </div>
-
-    <div class="text">
-        <h1 class="titre">PHP</h1>
-        <p>
-            Mesdames et messieurs, je suis PHP, le chef en coulisses du site web. Je m'occupe de tout ce qui se passe en arrière-plan. Je gère le formulaire, je communique avec une base de données et je garantis que vous puissiez sauvegarder votre version préférée de ce site. Vous ne me voyez pas souvent, c'est vrai, mais je m'assure que tout fonctionne correctement.
-        </p>
-    </div>
 
     <div class="registre hidden-element">
         <section class="container">

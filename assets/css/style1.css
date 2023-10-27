@@ -301,6 +301,43 @@
 }
 
 
+/* #region cards */
+
+.style1 .over-button,
+.style2 .over-button {
+    width: 100%;
+    position: absolute;
+    bottom: 8rem;
+}
+
+/* ! CONTAINER MASTER CARDS */
+.style1 .cards-language-container,
+.style2 .cards-language-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    width: 80%;
+    box-sizing: border-box;
+    gap: 2rem;
+}
+
+.style1 .card-container,
+.style2 .card-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 20rem;
+    position: relative;
+    display: inline-block;
+    font-family: inherit;
+    font-size: 1rem;
+}
+
+/* #endregion */
+
 
 /* #region static */
 /* css static */
