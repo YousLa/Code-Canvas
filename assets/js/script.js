@@ -13,7 +13,21 @@ let madaRegister = document.querySelector(".registre");
 let spirohtmlImage = document.querySelector(".spirohtml");
 let activeJs = false;
 let containeranimation = document.querySelector(".container-animation");
+let boutonEnregistrer = document.querySelector(".boutonEnregistrer");
 /* le click sur le button html*/
+
+
+/* le click sur le button html*/
+
+// boutonEnregistrer.addEventListener('click', styleEnregistrer)
+// function styleEnregistrer(event) {
+//     event.preventDefault();
+//     leBody.classList.remove(leBody.classList[0]);
+//     leBody.classList.add(document.querySelector(".inputclassNameBody").value);
+
+
+// }
+
 buttonHtml.addEventListener('click', resetCss)
 function resetCss(event) {
 
@@ -21,6 +35,14 @@ function resetCss(event) {
 
     leBody.classList.remove("style1");
     leBody.classList.remove("style2");
+    /*afficher les 2 image de l'animation*/
+    spirohtmlImage.classList.remove('hidden-element');
+    spirohtmlImage.classList.add('active-element');
+    /*changer les images png en svg*/
+    document.querySelector(".imgSpiro1").setAttribute("src", "./assets/img/png/spirovertAn.png");
+    document.querySelector(".imgSpiro2").setAttribute("src", "./assets/img/png/spirorangeAn.png");
+    document.querySelector(".imgSpiro3").setAttribute("src", "./assets/img/png/spirobleuAn.png");
+    document.querySelector(".imgSpiro4").setAttribute("src", "./assets/img/png/spiroroseAn.png");
 
 }
 
@@ -44,6 +66,7 @@ function choiceSStyleStatique(event) {
     event.preventDefault();
     document.querySelector(".formLogin").classList.add("withcss");
 
+
     madaRegister.classList.add("withcss");
     /*cacher les 2  buttons style1 et style2*/
     choicesStyle.classList.remove('active-element');
@@ -56,6 +79,8 @@ function choiceSStyleStatique(event) {
     /*enlever le css animation*/
     containeranimation.classList.remove('active-element');
     containeranimation.classList.add('hidden-element');
+    document.querySelector(".inputclassNameBody").value = leBody.classList[0];
+
 }
 
 /* Appliquer le style dynamique sur la page si l'utilisateur choisi le deuxieme style*/
@@ -63,18 +88,6 @@ choiceDynamique.addEventListener('click', choiceSStyleDynamique);
 
 function choiceSStyleDynamique(event) {
     event.preventDefault();
-    //ajouter les animation css
-    containeranimation.classList.add('active-element');
-    containeranimation.classList.remove('hidden-element');
-    /*changer les images png en svg*/
-    document.querySelector(".imgSpiro1").setAttribute("src", "./assets/img/spirovertAn.svg");
-    document.querySelector(".imgSpiro2").setAttribute("src", "./assets/img/spirorangeAn.svg");
-    document.querySelector(".imgSpiro3").setAttribute("src", "./assets/img/spirobleuAn.svg");
-    document.querySelector(".imgSpiro4").setAttribute("src", "./assets/img/spiroroseAn.svg");
-
-
-
-    document.querySelector(".formLogin").classList.add("withcss");
 
     /*cacher les 2  buttons style1 et style2*/
     choicesStyle.classList.remove('active-element');
@@ -84,7 +97,18 @@ function choiceSStyleDynamique(event) {
     leBody.classList.remove("style1");
     /*appliquer le style dynamique */
     document.querySelector("body").classList.add("style2");
+    //ajouter les animation css
+    containeranimation.classList.add('active-element');
+    containeranimation.classList.remove('hidden-element');
+    /*changer les images png en svg*/
+    document.querySelector(".imgSpiro1").setAttribute("src", "./assets/img/spirovertAn.svg");
+    document.querySelector(".imgSpiro2").setAttribute("src", "./assets/img/spirorangeAn.svg");
+    document.querySelector(".imgSpiro3").setAttribute("src", "./assets/img/spirobleuAn.svg");
+    document.querySelector(".imgSpiro4").setAttribute("src", "./assets/img/spiroroseAn.svg");
+    document.querySelector(".formLogin").classList.add("withcss");
+    document.querySelector(".inputclassNameBody").value = leBody.classList[0];
     displayThemeButtons();
+
 
 
 }
@@ -144,28 +168,6 @@ function showModalRegister(event) {
 }
 
 
-/*gérer le click sur enregistrer*/
-
-document.querySelector('.boutonEnregistrer').addEventListener('click', function () {
-    // Récupérez la classe actuelle du body.
-    const classeBody = document.body.classList[0]; // recuperer la classe de body
-
-    // Envoyez la classe au serveur pour enregistrement.
-    fetch('enregistrerLikeController.php', {
-        method: 'POST',
-        body: JSON.stringify({ classe: classeBody }),
-        headers: {
-            'Content-Type': 'application/json'
-        }
-    }).then(response => {
-        if (response.ok) {
-            // Redirection vers une page de confirmation ou autre.
-            console.log("tous ok");
-        } else {
-            // Gérer les erreurs, peut-être afficher un message à l'utilisateur.
-        }
-    });
-});
 
 
 const themes = [
@@ -220,5 +222,24 @@ const displayThemeButtons = () => {
     });
 };
 
+// * Récupération du bouton
+const CLOSER = document.querySelector('#closeR');
+console.log(CLOSER);
 
+// * Récupération du bouton
+const CLOSEL = document.querySelector('#closeL');
+console.log(CLOSEL);
+
+// ~ Ajout de l'évènement de fermeture du modal sur mon bouton close
+CLOSER.addEventListener('click', () => {
+
+    madaRegister.classList.add('hidden-element');
+    madaRegister.classList.remove('active-element');
+});
+// ~ Ajout de l'évènement de fermeture du modal sur mon bouton close
+CLOSEL.addEventListener('click', () => {
+
+    modalLogin.classList.add('hidden-element');
+    modalLogin.classList.remove('active-element');
+});
 

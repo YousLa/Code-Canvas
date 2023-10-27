@@ -277,7 +277,9 @@
 /* ^ ============== Bouton LOGIN ============== */
 
 .style1 button.buttonLogin,
-.style2 button.buttonLogin {
+.style1 button.buttonLogout,
+.style2 button.buttonLogin,
+.style2 button.buttonLogout {
     /* Background des boutons de base */
     background: #c24d22;
     /* border */
@@ -286,18 +288,24 @@
 }
 
 .style1 .buttonLogin:hover,
-.style2 .buttonLogin:hover {
+.style2 .buttonLogin:hover,
+.style1 .buttonLogout:hover,
+.style2 .buttonLogout:hover {
     /* Couleur back ground hover */
     background: #9c3713;
 }
 
 .style1 button.buttonLogin::before,
-.style2 button.buttonLogin::before {
+.style2 button.buttonLogin::before,
+.style1 button.buttonLogout::before,
+.style2 button.buttonLogout::before {
     background: #9f320a;
 }
 
 .style1 button.buttonLogin,
-.style2 button.buttonLogin {
+.style2 button.buttonLogin,
+.style1 button.buttonLogout,
+.style2 button.buttonLogout {
     width: fit-content;
 }
 
@@ -651,3 +659,18 @@
 }
 
 /* #endregion */
+
+#closeL,
+#closeR {
+    width: 1.5rem;
+    display: flex;
+    justify-content: right;
+    margin-bottom: 3rem;
+    cursor: pointer;
+}
+
+#closeL img,
+#closeR img {
+    width: 100%;
+    height: fit-content;
+}

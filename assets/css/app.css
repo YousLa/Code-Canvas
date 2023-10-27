@@ -62,7 +62,6 @@ h1 {
     justify-content: center;
     width: 100%;
     height: 100%;
-    left: 5rem;
     backdrop-filter: blur(20px);
 }
 
