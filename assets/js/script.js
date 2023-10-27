@@ -26,7 +26,7 @@ function styleEnregistrer(event) {
     event.preventDefault();
     leBody.classList.remove(leBody.classList[0]);
     leBody.classList.add(document.querySelector(".inputclassNameBody").value);
-   
+
 
 }
 
@@ -39,6 +39,14 @@ function resetCss(event) {
 
     leBody.classList.remove("style1");
     leBody.classList.remove("style2");
+    /*afficher les 2 image de l'animation*/
+    spirohtmlImage.classList.remove('hidden-element');
+    spirohtmlImage.classList.add('active-element');
+    /*changer les images png en svg*/
+    document.querySelector(".imgSpiro1").setAttribute("src", "./assets/img/png/spirovertAn.png");
+    document.querySelector(".imgSpiro2").setAttribute("src", "./assets/img/png/spirorangeAn.png");
+    document.querySelector(".imgSpiro3").setAttribute("src", "./assets/img/png/spirobleuAn.png");
+    document.querySelector(".imgSpiro4").setAttribute("src", "./assets/img/png/spiroroseAn.png");
 
 }
 
@@ -85,14 +93,14 @@ choiceDynamique.addEventListener('click', choiceSStyleDynamique);
 function choiceSStyleDynamique(event) {
     event.preventDefault();
 
-        /*cacher les 2  buttons style1 et style2*/
-        choicesStyle.classList.remove('active-element');
-        choicesStyle.classList.add('hidden-element');
-        spirohtmlImage.classList.remove('active-element');
-        spirohtmlImage.classList.add('hidden-element');
-        leBody.classList.remove("style1");
-        /*appliquer le style dynamique */
-        document.querySelector("body").classList.add("style2");
+    /*cacher les 2  buttons style1 et style2*/
+    choicesStyle.classList.remove('active-element');
+    choicesStyle.classList.add('hidden-element');
+    spirohtmlImage.classList.remove('active-element');
+    spirohtmlImage.classList.add('hidden-element');
+    leBody.classList.remove("style1");
+    /*appliquer le style dynamique */
+    document.querySelector("body").classList.add("style2");
     //ajouter les animation css
     containeranimation.classList.add('active-element');
     containeranimation.classList.remove('hidden-element');
@@ -104,7 +112,7 @@ function choiceSStyleDynamique(event) {
     document.querySelector(".formLogin").classList.add("withcss");
     document.querySelector(".inputclassNameBody").value = leBody.classList[0];
     displayThemeButtons();
-   
+
 
 
 }
