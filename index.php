@@ -48,6 +48,10 @@ require_once 'views/templates/nav.php';
         <img class="imgSpiro3 bleu" src="./assets/img/png/spirobleuAn.png" alt="">
         <img class="imgSpiro4 rose" src="./assets/img/png/spiroroseAn.png" alt="">
     </div>
+    <!-- page js -->
+    <div class="js_animation hidden-element"> </div>    
+
+
 
     <!-- Textes -->
     <h1 class="titre">HTML</h1>
