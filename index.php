@@ -43,18 +43,18 @@ require_once 'views/templates/nav.php';
     </div>
 
     <!-- page CSS animations -->
-    <div class = "container-animation">
+    <div class="container-animation">
         <div>
-            <img src="./assets/img/spirovertAn.svg" alt="" class = "vert">
-        </div>
-        <div>         
-            <img src="./assets/img/spirorangeAn.svg" alt="" class = "orange">
+            <img src="./assets/img/spirovertAn.svg" alt="" class="vert">
         </div>
         <div>
-            <img src="./assets/img/spirobleuAn.svg" alt="" class = "bleu">
+            <img src="./assets/img/spirorangeAn.svg" alt="" class="orange">
         </div>
         <div>
-            <img src="./assets/img/spiroroseAn.svg" alt="" class = "rose">
+            <img src="./assets/img/spirobleuAn.svg" alt="" class="bleu">
+        </div>
+        <div>
+            <img src="./assets/img/spiroroseAn.svg" alt="" class="rose">
         </div>
     </div>
 
