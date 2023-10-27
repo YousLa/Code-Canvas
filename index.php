@@ -43,13 +43,9 @@ require_once 'views/templates/nav.php';
 
     <!-- page CSS animations -->
     <div class="container-animation">
-
         <img class="imgSpiro1 vert" src="./assets/img/png/spirovertAn.png" alt="">
-
         <img class="imgSpiro2 orange" src="./assets/img/png/spiroorangeAn.png" alt="">
-
         <img class="imgSpiro3 bleu" src="./assets/img/png/spirobleuAn.png" alt="">
-
         <img class="imgSpiro4 rose" src="./assets/img/png/spiroroseAn.png" alt="">
     </div>
 
