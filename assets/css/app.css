@@ -54,7 +54,7 @@ h1 {
     height: 100vh;
 }
 
-.container {
+.style1 .container ,.style2 .container {
     z-index: -1000;
     position: relative;
     display: flex;
@@ -148,8 +148,8 @@ h1 {
 
 /* ================= LOGIN MODAL ================= */
 
-.formLogin,
-.registre {
+.style1 .formLogin,.style2 .formLogin
+.style2 .registre ,.style1 .registre{
     background-color: #2826261f;
     display: flex;
     flex-direction: column;

@@ -1,0 +1,129 @@
+@keyframes morph {
+
+    100% {
+        border-radius: 20% 60%;
+    }
+
+    0% {
+        border-radius: 88% 11% 28% 50% / 66% 29% 61% 24%;
+    }
+}
+
+.style2,
+.style1 {
+    overflow: hidden;
+    margin: 0;
+    height: 100%;
+}
+
+.style2 .container-animation::before,
+.style2 .container-animation::after {
+    content: "";
+    width: 60vmax;
+    height: 60vmax;
+    position: absolute;
+    background: rgba(213, 154, 196, 0.2);
+    left: 25vmin;
+    top: 10vmin;
+    animation: morph 15s linear infinite alternate, spin 20s linear infinite;
+    z-index: 1;
+    will-change: border-radius, transform;
+    transform-origin: 20% 20%;
+    pointer-events: none;
+}
+
+.style2 .container-animation::after {
+    width: 80vmin;
+    height: 80vmin;
+    background: rgba(248, 239, 119, 0.4);
+    left: auto;
+    right: -10vmin;
+    top: auto;
+    animation: morph 5s linear infinite alternate, spin 25s linear infinite reverse;
+    transform-origin: 20% 20%;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+/* .style2 html,
+body {
+    width: 100%;
+    overflow: hidden;
+} */
+
+@keyframes slidein {
+    from {
+        margin-left: -30%;
+        width: 25%;
+    }
+
+    to {
+        margin-left: 100%;
+        width: 25%;
+    }
+}
+
+@keyframes spin {
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes fast-spin {
+    100% {
+        transform: rotate(900deg);
+    }
+}
+
+.style2 .orange {
+    position: absolute;
+    top: 5em;
+    width: 15%;
+    animation: slidein 20s infinite alternate, spin 5s infinite linear;
+    opacity: 0.7;
+    z-index: 3;
+}
+
+.style2 .vert {
+    position: relative;
+    width: 20%;
+    animation: slidein 15s infinite alternate-reverse, spin 10s infinite ease;
+    z-index: 2;
+}
+
+.style2 .bleu {
+    position: absolute;
+    top: 20em;
+    left: 32em;
+    width: 10%;
+    animation-name: spin;
+    animation-duration: 25s;
+    animation-iteration-count: infinite;
+    z-index: 4;
+}
+
+.style2 .bleu:hover {
+    animation-name: fast-spin;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in-out;
+}
+
+.style2 .rose {
+    position: absolute;
+    top: 10em;
+    right: 30em;
+    width: 12%;
+    z-index: 5;
+}
+
+.style2 .rose:hover {
+    animation-name: spin;
+    animation-duration: 1.5s;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in-out;
+}

@@ -12,6 +12,7 @@ let buttonRegister = document.querySelector("#registration");
 let madaRegister = document.querySelector(".registre");
 let spirohtmlImage = document.querySelector(".spirohtml");
 let activeJs = false;
+let containeranimation = document.querySelector(".container-animation");
 /* le click sur le button html*/
 buttonHtml.addEventListener('click', resetCss)
 function resetCss(event) {
@@ -42,6 +43,7 @@ function choiceSStyleStatique(event) {
     /*appliquer le style*/
     event.preventDefault();
     document.querySelector(".formLogin").classList.add("withcss");
+   
     madaRegister.classList.add("withcss");
     /*cacher les 2  buttons style1 et style2*/
     choicesStyle.classList.remove('active-element');
@@ -51,15 +53,29 @@ function choiceSStyleStatique(event) {
 
     leBody.classList.remove("style2");
     document.querySelector("body").classList.add("style1");
+    /*enlever le css animation*/
+    containeranimation.classList.remove('active-element');
+    containeranimation.classList.add('hidden-element');
 }
 
 /* Appliquer le style dynamique sur la page si l'utilisateur choisi le deuxieme style*/
 choiceDynamique.addEventListener('click', choiceSStyleDynamique);
 
 function choiceSStyleDynamique(event) {
+    event.preventDefault();
+    //ajouter les animation css
+    containeranimation.classList.add('active-element');
+    containeranimation.classList.remove('hidden-element');
+    /*changer les images png en svg*/
+    document.querySelector(".imgSpiro1").setAttribute("src", "./assets/img/spirovertAn.svg");
+    document.querySelector(".imgSpiro2").setAttribute("src", "./assets/img/spiroorangeAn.svg");
+    document.querySelector(".imgSpiro3").setAttribute("src", "./assets/img/spirobleuAn.svg");
+    document.querySelector(".imgSpiro4").setAttribute("src", "./assets/img/spiroroseAn.svg");
+
+
 
     document.querySelector(".formLogin").classList.add("withcss");
-    event.preventDefault();
+
     /*cacher les 2  buttons style1 et style2*/
     choicesStyle.classList.remove('active-element');
     choicesStyle.classList.add('hidden-element');
@@ -69,6 +85,7 @@ function choiceSStyleDynamique(event) {
     /*appliquer le style dynamique */
     document.querySelector("body").classList.add("style2");
     displayThemeButtons();
+
 
 }
 
@@ -108,8 +125,8 @@ function showloginModal(event) {
 
 buttonSubmitRegistre.addEventListener('click', dontRegister);
 function dontRegister(event) {
-    //event.preventDefault();
-    //  alert("Je ne peux pas t'inscrire dans la base de données, continue à chercher le langage qui te permettra de créer ton compte.");
+   // event.preventDefault();
+   // alert("Je ne peux pas t'inscrire dans la base de données, continue à chercher le langage qui te permettra de créer ton compte.");
 }
 
 
@@ -125,6 +142,30 @@ function showModalRegister(event) {
     madaRegister.classList.remove('hidden-element');
     madaRegister.classList.add('active-element');
 }
+
+
+/*gérer le click sur enregistrer*/
+
+document.querySelector('.boutonEnregistrer').addEventListener('click', function() {
+    // Récupérez la classe actuelle du body.
+    const classeBody = document.body.classList[0]; // recuperer la classe de body
+
+    // Envoyez la classe au serveur pour enregistrement.
+    fetch('enregistrerLikeController.php', {
+        method: 'POST',
+        body: JSON.stringify({ classe: classeBody }),
+        headers: {
+            'Content-Type': 'application/json'
+        }
+    }).then(response => {
+        if (response.ok) {
+            // Redirection vers une page de confirmation ou autre.
+            console.log("tous ok");
+        } else {
+            // Gérer les erreurs, peut-être afficher un message à l'utilisateur.
+        }
+    });
+});
 
 
 const themes = [
