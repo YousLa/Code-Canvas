@@ -58,6 +58,14 @@ choiceDynamique.addEventListener('click', choiceSStyleDynamique);
 
 function choiceSStyleDynamique(event) {
 
+    /*changer les images png en svg*/
+    document.querySelector(".imgSpiro1").setAttribute("src", "./assets/img/spirovertAn.svg");
+    document.querySelector(".imgSpiro2").setAttribute("src", "./assets/img/spiroorangeAn.svg");
+    document.querySelector(".imgSpiro3").setAttribute("src", "./assets/img/spirobleuAn.svg");
+    document.querySelector(".imgSpiro4").setAttribute("src", "./assets/img/spiroroseAn.svg");
+
+
+
     document.querySelector(".formLogin").classList.add("withcss");
     event.preventDefault();
     /*cacher les 2  buttons style1 et style2*/
