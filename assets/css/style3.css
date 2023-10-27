@@ -1,0 +1,83 @@
+.style3 .js_animation {
+    height: 50%;
+    perspective: 1200px;
+    background: rgb(6, 83, 40);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    overflow: hidden;
+}
+
+.style3 .mydiv {
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    transform-origin: center;
+    transform-style: preserve-3d;
+    animation: b 3s linear infinite alternate;
+    border-radius: 50%;
+}
+
+.style3 .one {
+    animation: one 4s linear infinite
+}
+
+.style3 .two {
+    animation: two 4s linear infinite
+}
+
+.style3 .three {
+    animation: three 4s linear infinite
+}
+
+.style3 .four {
+    animation: four 4s linear infinite
+}
+
+
+@keyframes one {
+
+    100% {
+        top: 0;
+        left: 0;
+        right: 100%;
+        bottom: 100%;
+        transform: translate3d(0, 0, -1000px);
+
+    }
+}
+
+@keyframes two {
+    100% {
+        left: 0;
+        bottom: 0;
+        top: 100%;
+        right:
+            100%;
+        transform: translate3d(0, 0, -1000px);
+
+    }
+}
+
+@keyframes three {
+    100% {
+        right: 0;
+        top: 0;
+        bottom: 100%;
+        left: 100%;
+        transform: translate3d(0, 0, -1000px);
+
+    }
+}
+
+@keyframes four {
+    100% {
+        right: 0;
+        bottom: 0;
+        left: 100%;
+        top: 100%;
+        transform: translate3d(0, 0, -1000px);
+    }
+}
