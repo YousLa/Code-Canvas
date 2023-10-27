@@ -43,8 +43,7 @@ require_once 'views/templates/nav.php';
     </div>
 
     <!-- page js -->
-    <container class="js_animation">
-    </container>    
+    <div class="js_animation hidden-element"> </div>    
 
 
 

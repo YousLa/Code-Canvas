@@ -83,7 +83,12 @@ function showJsChoix(event) {
     choicesStyle.classList.remove('active-element');
     choicesStyle.classList.add('hidden-element');
 
+    // activer l'animation js //
+    animationjs();
+
     /*activer le button login*/
+
+
 
 }
 buttonLogin.addEventListener('click', showloginModal);

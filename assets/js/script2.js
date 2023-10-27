@@ -1,5 +1,9 @@
 
-// start function randVal
+
+
+function animationjs(){
+
+    // start function randVal
 function randVal(myVal, other){
     
     if(Array.isArray(myVal)){
@@ -25,7 +29,10 @@ let colors = ['#5999f1','#26b85d','#375ca4','#f4e736',' #f366d8','#fa590c'];
 
 let size = [50,40,30,20,25];
 
-window.onmousemove = function(e){
+
+
+window.addEventListener("mouseover", showAnimation) ;
+function showAnimation(e) {
     let x = e.clientX ;
     let y = e.clientY ;
     let cl = ['one','two','three','four'];
@@ -46,8 +53,6 @@ window.onmousemove = function(e){
             
         }   
 }
-
-
 let mydiv = document.getElementsByClassName("mydiv");
 let bd =document.body;
 
@@ -64,3 +69,4 @@ setInterval(function(){
 setInterval(function(){
             bd.style.backgroundColor =randVal(bdColors);
             },4000)
+}
