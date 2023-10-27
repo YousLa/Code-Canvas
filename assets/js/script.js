@@ -43,7 +43,7 @@ function choiceSStyleStatique(event) {
     /*appliquer le style*/
     event.preventDefault();
     document.querySelector(".formLogin").classList.add("withcss");
-   
+
     madaRegister.classList.add("withcss");
     /*cacher les 2  buttons style1 et style2*/
     choicesStyle.classList.remove('active-element');
@@ -68,7 +68,7 @@ function choiceSStyleDynamique(event) {
     containeranimation.classList.remove('hidden-element');
     /*changer les images png en svg*/
     document.querySelector(".imgSpiro1").setAttribute("src", "./assets/img/spirovertAn.svg");
-    document.querySelector(".imgSpiro2").setAttribute("src", "./assets/img/spiroorangeAn.svg");
+    document.querySelector(".imgSpiro2").setAttribute("src", "./assets/img/spirorangeAn.svg");
     document.querySelector(".imgSpiro3").setAttribute("src", "./assets/img/spirobleuAn.svg");
     document.querySelector(".imgSpiro4").setAttribute("src", "./assets/img/spiroroseAn.svg");
 
@@ -125,8 +125,8 @@ function showloginModal(event) {
 
 buttonSubmitRegistre.addEventListener('click', dontRegister);
 function dontRegister(event) {
-   // event.preventDefault();
-   // alert("Je ne peux pas t'inscrire dans la base de données, continue à chercher le langage qui te permettra de créer ton compte.");
+    // event.preventDefault();
+    // alert("Je ne peux pas t'inscrire dans la base de données, continue à chercher le langage qui te permettra de créer ton compte.");
 }
 
 
@@ -146,7 +146,7 @@ function showModalRegister(event) {
 
 /*gérer le click sur enregistrer*/
 
-document.querySelector('.boutonEnregistrer').addEventListener('click', function() {
+document.querySelector('.boutonEnregistrer').addEventListener('click', function () {
     // Récupérez la classe actuelle du body.
     const classeBody = document.body.classList[0]; // recuperer la classe de body
 
