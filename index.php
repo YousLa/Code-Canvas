@@ -23,19 +23,12 @@ require_once 'views/templates/nav.php';
 
     <div class="container">
 
-
         <div class="forme1"></div>
-        <div class="spirovert">
-            <img src="./assets/img/spiro vert- 1.svg" alt="">
-        </div>
         <div class="forme2"></div>
         <div class="forme3"></div>
         <div class="forme4"></div>
         <div class="forme5"></div>
         <div class="forme6"></div>
-        <div class="spirojaune">
-            <img src="./assets/img/spirojaune.svg" alt="">
-        </div>
         <div class="forme7"></div>
         <div class="forme8"></div>
         <div class="forme9"></div>
@@ -49,10 +42,12 @@ require_once 'views/templates/nav.php';
         <img class="imgSpiro4 rose" src="./assets/img/png/spiroroseAn.png" alt="">
     </div>
     <!-- page js -->
-    <div class="js_animation hidden-element"> </div>    
+    <div class="js_animation hidden-element"> </div>
 
 
+    <div>
 
+    </div>
     <!-- Textes -->
     <h1 class="titre">HTML</h1>
     <div class="text-container">
@@ -81,8 +76,6 @@ require_once 'views/templates/nav.php';
         </p>
     </div>
 
-
-    <!-- formulaire inscription -->
     <div class="registre hidden-element">
         <section class="container">
             <div class="login-container">
