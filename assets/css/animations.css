@@ -3,9 +3,17 @@
     100% {
         border-radius: 20% 60%;
     }
+
     0% {
         border-radius: 88% 11% 28% 50% / 66% 29% 61% 24%;
     }
+}
+
+.style2,
+.style1 {
+    overflow: hidden;
+    margin: 0;
+    height: 100%;
 }
 
 .style2 .container-animation::before,
