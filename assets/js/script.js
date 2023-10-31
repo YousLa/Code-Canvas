@@ -14,24 +14,20 @@ let spirohtmlImage = document.querySelector(".spirohtml");
 let activeJs = false;
 let containeranimation = document.querySelector(".container-animation");
 let boutonEnregistrer = document.querySelector(".boutonEnregistrer");
-
-
-
+/* le click sur le button html*/
 
 
 /* le click sur le button html*/
 
-boutonEnregistrer.addEventListener('click', styleEnregistrer)
-function styleEnregistrer(event) {
-    event.preventDefault();
-    leBody.classList.remove(leBody.classList[0]);
-    leBody.classList.add(document.querySelector(".inputclassNameBody").value);
+// boutonEnregistrer.addEventListener('click', styleEnregistrer)
+// function styleEnregistrer(event) {
+//     event.preventDefault();
+//     leBody.classList.remove(leBody.classList[0]);
+//     leBody.classList.add(document.querySelector(".inputclassNameBody").value);
 
 
-}
+// }
 
-
-/* le click sur le button html*/
 buttonHtml.addEventListener('click', resetCss)
 function resetCss(event) {
 
@@ -228,9 +224,11 @@ const displayThemeButtons = () => {
 
 // * Récupération du bouton
 const CLOSER = document.querySelector('#closeR');
+console.log(CLOSER);
 
 // * Récupération du bouton
 const CLOSEL = document.querySelector('#closeL');
+console.log(CLOSEL);
 
 // ~ Ajout de l'évènement de fermeture du modal sur mon bouton close
 CLOSER.addEventListener('click', () => {
@@ -244,5 +242,4 @@ CLOSEL.addEventListener('click', () => {
     modalLogin.classList.add('hidden-element');
     modalLogin.classList.remove('active-element');
 });
-
 

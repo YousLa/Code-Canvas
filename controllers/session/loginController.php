@@ -40,6 +40,8 @@ if (isset($_POST['pseudo'], $_POST['password'])) {
                 $_SESSION['fonctionjs'] = $user['fonctionjs'];
 
                 header("Location: ../../index.php");
+            } else {
+                var_dump("ca marche pas");
             }
         }
     }

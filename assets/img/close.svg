@@ -1,11 +1,5 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!-- Generator: Adobe Illustrator 28.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
-<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-	 viewBox="0 0 40 40" style="enable-background:new 0 0 40 40;" xml:space="preserve">
-<style type="text/css">
-	.st0{fill:#FFFFFF;stroke:#000000;stroke-miterlimit:10;}
-</style>
+<svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
 <g id="Fermer">
-	<path id="Vector" class="st0" d="M33.3,33.3L6.7,6.7 M33.3,6.7L6.7,33.3"/>
+<path id="Vector" d="M33.3337 33.3333L6.66699 6.66666M33.3337 6.66666L6.66699 33.3333" stroke="#000000" stroke-width="3.5" stroke-linecap="round"/>
 </g>
 </svg>
