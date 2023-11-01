@@ -17,7 +17,7 @@ if (isset($_SESSION['pseudo']) && isset($_POST['classe'])) {
 
 
     $query = "
-    UPDATE user SET classe = :classe WHERE pseudo = :pseudo
+    UPDATE user SET style = :classe WHERE pseudo = :pseudo
     ";
 
     $objet = $database->prepare($query);
@@ -28,8 +28,8 @@ if (isset($_SESSION['pseudo']) && isset($_POST['classe'])) {
     );
 
     if ($objet->execute($options)) {
-        var_dump("gggg");
-        // header("Location: ../../index.php");
+    
+        header("Location: ../../index.php");
         // TODO Créer un GET pour afficher un message lorsque la creation de compte à bien été effectué
     }
 } else {

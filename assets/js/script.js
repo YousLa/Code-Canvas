@@ -14,13 +14,40 @@ let spirohtmlImage = document.querySelector(".spirohtml");
 let activeJs = false;
 let containeranimation = document.querySelector(".container-animation");
 let boutonEnregistrer = document.querySelector(".boutonEnregistrer");
+
+// if(leBody.classList[0])
+function changePngToSvg()
+{
+     /*changer les images png en svg*/
+     document.querySelector(".imgSpiro1").setAttribute("src", "./assets/img/spirovertAn.svg");
+     document.querySelector(".imgSpiro2").setAttribute("src", "./assets/img/spirorangeAn.svg");
+     document.querySelector(".imgSpiro3").setAttribute("src", "./assets/img/spirobleuAn.svg");
+     document.querySelector(".imgSpiro4").setAttribute("src", "./assets/img/spiroroseAn.svg");
+}
+if ((leBody.classList[0] == "style2")) {
+    /*cacher les 2 image de l'animation*/
+    spirohtmlImage.classList.add('hidden-element');
+    spirohtmlImage.classList.remove('active-element');
+    /*changer les images png en svg*/
+    changePngToSvg();
+
+}
+if ((leBody.classList[0] == "style1")) {
+    spirohtmlImage.classList.add('hidden-element');
+    spirohtmlImage.classList.remove('active-element');
+    containeranimation.classList.remove('active-element');
+    containeranimation.classList.add('hidden-element');
+}
+
+
+
 /* le click sur le button html*/
 
 buttonHtml.addEventListener('click', resetCss)
 function resetCss(event) {
 
     event.preventDefault();
-
+    console.log(document.getElementById("enregistrer"));
     leBody.classList.remove("style1");
     leBody.classList.remove("style2");
     /*afficher les 2 image de l'animation*/
@@ -63,7 +90,7 @@ function choiceSStyleStatique(event) {
     /*enlever le css animation*/
     containeranimation.classList.remove('active-element');
     containeranimation.classList.add('hidden-element');
-    document.querySelector(".inputclassNameBody").value = leBody.classList[0];
+    document.querySelector(".styleUser").value = leBody.classList[0];
 
 }
 
@@ -85,11 +112,8 @@ function choiceSStyleDynamique(event) {
     containeranimation.classList.add('active-element');
     containeranimation.classList.remove('hidden-element');
     /*changer les images png en svg*/
-    document.querySelector(".imgSpiro1").setAttribute("src", "./assets/img/spirovertAn.svg");
-    document.querySelector(".imgSpiro2").setAttribute("src", "./assets/img/spirorangeAn.svg");
-    document.querySelector(".imgSpiro3").setAttribute("src", "./assets/img/spirobleuAn.svg");
-    document.querySelector(".imgSpiro4").setAttribute("src", "./assets/img/spiroroseAn.svg");
-    document.querySelector(".inputclassNameBody").value = leBody.classList[0];
+    changePngToSvg();
+    document.querySelector(".styleUser").value = leBody.classList[0];
     displayThemeButtons();
 
 
@@ -241,5 +265,4 @@ CLOSEL.addEventListener('click', () => {
     });
 
     */
-
 

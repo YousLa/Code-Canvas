@@ -18,4 +18,8 @@
 
 <!-- Style 1  -->
 
-<body><!-- pas de class de base  -->
+<?php if (isset($_SESSION['id'])) : ?>
+    <body class="<?= $_SESSION['style'] ?>">
+<?php else : ?>
+    <body>
+<?php endif; ?>
