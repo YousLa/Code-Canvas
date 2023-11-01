@@ -64,10 +64,6 @@ choiceStatique.addEventListener('click', choiceSStyleStatique);
 function choiceSStyleStatique(event) {
     /*appliquer le style*/
     event.preventDefault();
-    document.querySelector(".formLogin").classList.add("withcss");
-
-
-    madaRegister.classList.add("withcss");
     /*cacher les 2  buttons style1 et style2*/
     choicesStyle.classList.remove('active-element');
     choicesStyle.classList.add('hidden-element');
@@ -105,7 +101,6 @@ function choiceSStyleDynamique(event) {
     document.querySelector(".imgSpiro2").setAttribute("src", "./assets/img/spirorangeAn.svg");
     document.querySelector(".imgSpiro3").setAttribute("src", "./assets/img/spirobleuAn.svg");
     document.querySelector(".imgSpiro4").setAttribute("src", "./assets/img/spiroroseAn.svg");
-    document.querySelector(".formLogin").classList.add("withcss");
     document.querySelector(".inputclassNameBody").value = leBody.classList[0];
     displayThemeButtons();
 
