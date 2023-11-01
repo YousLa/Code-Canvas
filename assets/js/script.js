@@ -16,18 +16,6 @@ let containeranimation = document.querySelector(".container-animation");
 let boutonEnregistrer = document.querySelector(".boutonEnregistrer");
 /* le click sur le button html*/
 
-
-/* le click sur le button html*/
-
-// boutonEnregistrer.addEventListener('click', styleEnregistrer)
-// function styleEnregistrer(event) {
-//     event.preventDefault();
-//     leBody.classList.remove(leBody.classList[0]);
-//     leBody.classList.add(document.querySelector(".inputclassNameBody").value);
-
-
-// }
-
 buttonHtml.addEventListener('click', resetCss)
 function resetCss(event) {
 
@@ -112,14 +100,12 @@ function choiceSStyleDynamique(event) {
 
 buttonJs.addEventListener('click', showJsChoix);
 function showJsChoix(event) {
-    activeJs = true;
-    event.preventDefault();
+    activeJs = !activeJs;
+    // event.preventDefault();
     /* faire disparaitre les choix css*/
-
     choicesStyle.classList.remove('active-element');
     choicesStyle.classList.add('hidden-element');
-
-    // activer l'animation js //
+    // activer l'animation js />/
     animationjs();
 
     /*activer le button login*/
@@ -237,4 +223,23 @@ CLOSEL.addEventListener('click', () => {
     modalLogin.classList.add('hidden-element');
     modalLogin.classList.remove('active-element');
 });
+
+
+/*Enregistrer version preferee
+ console.log(boutonEnregistrer);
+    const nomClasse = document.body.className;
+  
+    boutonEnregistrer.addEventListener('click', function() {
+        alert("je suis dans le clik");
+      axios.post('likeVersionController.php', { nomClasse })
+        .then(response => {
+          alert('Classe enregistrée avec succès !');
+        })
+        .catch(error => {
+          console.error('Erreur lors de l\'enregistrement de la classe : ', error);
+        });
+    });
+
+    */
+
 
